@@ -1,0 +1,43 @@
+.about {
+  padding-top: 125px;
+  background-color: $primary-bgcolor;
+}
+
+.lead {
+  margin-bottom: 35px;
+
+  font-family: $primary-font;
+  @include font(500, 12px, 19px, 0em);
+
+  color: $dark-color;
+
+  @media screen and (min-width: 768px) {
+    @include font(500, 14px, 25px, 0em);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(500, 16px, 28px, 0.04em);
+  }
+}
+
+.description {
+  margin-bottom: 30px;
+
+  font-family: $primary-font;
+  @include font(500, 12px, 19px, 0em);
+
+  color: $description-color;
+
+  @media screen and (min-width: 768px) {
+    @include font(500, 14px, 25px, 0.04em);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(500, 14px, 27px, 0.04em);
+  }
+}
+
+.text {
+  @extend .description;
+  margin-bottom: 20px;
+}
