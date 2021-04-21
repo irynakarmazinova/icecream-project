@@ -1,1 +1,16 @@
 // для описания стилей всех кнопок
+.btn-light {
+  @include flex-center;
+
+  font-family: $primary-font;
+  @include font(700, 14px, 18px, 0em);
+
+  color: $primary-color;
+  background: $secondary-color;
+  border-radius: 22px;
+}
+
+// .btn-light::after {
+//   content: '';
+//   background-image: ;
+// }
