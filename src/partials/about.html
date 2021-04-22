@@ -1,106 +1,124 @@
 <section class="about">
-  <!-- фоновое изображение  всплеск молока -->
-  <picture>
-    <source
-      srcset="
-        ./images/desktop/about/milkboxd1@1x.webp 1x,
-        ./images/desktop/about/milkboxd1@2x.webp 2x
-      "
-      media="(min-width:1280px)"
-      type="image/webp"
-    />
-    <source
-      srcset="
-        ./images/desktop/about/milkboxd1@1x.png 1x,
-        ./images/desktop/about/milkboxd1@2x.png 2x
-      "
-      media="(min-width:1280px)"
-      type="image/png"
-    />
-
-    <source
-      srcset="
-        ./images/mobile/about/milkboxm1@1x.webp 1x,
-        ./images/mobile/about/milkboxm1@2x.webp 2x
-      "
-      media="(min-width:480px)"
-      type="image/webp"
-    />
-    <source
-      srcset="./images/mobile/about/milkboxm1@1x.png 1x, ./images/mobile/about/milkboxm1@2x.png 2x"
-      media="(min-width:480px)"
-      type="image/png"
-    />
-    <img src="./images/mobile/about/milkboxm1@1x.png" alt="всплеск молока фоновое изображение" />
-  </picture>
-
   <!-- контейнер -->
   <div class="container">
-    <p class="suptitle">tradition and love</p>
-    <h2 class="title title-about">how it’s made?</h2>
+    <p class="suptitle suptitle_center">tradition and love</p>
+    <h2 class="title title-about title_center">how it’s made?</h2>
 
-    <!-- изображение коровы с кувшином молока -->
-    <picture
-      ><source
+    <div class="flex-box">
+      <!-- изображение коровы с кувшином молока -->
+      <div class="cow-image-box">
+        <picture
+          ><source
+            srcset="
+              ./images/desktop/about/cowmilkd1@1x.webp 1x,
+              ./images/desktop/about/cowmilkd1@2x.webp 2x
+            "
+            media="(min-width:1280px)"
+            type="image/webp" />
+
+          <source
+            srcset="
+              ./images/desktop/about/cowmilkd1@1x.png 1x,
+              ./images/desktop/about/cowmilkd1@2x.png 2x
+            "
+            media="(min-width:1280px)"
+            type="image/png" />
+
+          <source
+            srcset="
+              ./images/tablet/about/cowmilkt1@1x.webp 1x,
+              ./images/tablet/about/cowmilkt1@2x.webp 2x
+            "
+            media="(min-width:768px)"
+            type="image/webp" />
+          <source
+            srcset="
+              ./images/tablet/about/cowmilkt1@1x.png 1x,
+              ./images/tablet/about/cowmilkt1@2x.png 2x
+            "
+            media="(min-width:768px)"
+            type="image/png" />
+
+          <source
+            srcset="
+              ./images/mobile/about/cowmilkm1@1x.webp 1x,
+              ./images/mobile/about/cowmilkm1@2x.webp 2x
+            "
+            media="(min-width:480px)"
+            type="image/webp" />
+          <source
+            srcset="
+              ./images/mobile/about/cowmilkm1@1x.png 1x,
+              ./images/mobile/about/cowmilkm1@2x.png 2x
+            "
+            media="(min-width:480px)"
+            type="image/png" />
+          <img
+            src="./images/mobile/about/cowmilkm1@1x.png"
+            alt="кувшин молока био-эко и изображение коровы"
+        /></picture>
+      </div>
+
+      <div class="description-box">
+        <p class="lead">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <p class="description">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt.
+        </p>
+        <p class="text">Aliquam erat volutpat. Aenean accumsan.</p>
+
+        <!-- почему не работает ховер и фокус в версии таблетка и мобилка?-разбираюсь -->
+        <button class="btn-light" type="button">
+          Read more
+          <svg class="icon-arrow-right" width="5" height="9">
+            <use href="./images/sprite/sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- фоновое изображение  всплеск молока -->
+  <div class="milk-image-box">
+    <picture>
+      <source
         srcset="
-          ./images/desktop/about/cowmilkd1@1x.webp 1x,
-          ./images/desktop/about/cowmilkd1@2x.webp 2x
+          ./images/desktop/about/milkboxd1@1x.webp 1x,
+          ./images/desktop/about/milkboxd1@2x.webp 2x
         "
         media="(min-width:1280px)"
-        type="image/webp" />
+        type="image/webp"
+      />
       <source
         srcset="
-          ./images/desktop/about/cowmilkd1@1x.png 1x,
-          ./images/desktop/about/cowmilkd1@2x.png 2x
+          ./images/desktop/about/milkboxd1@1x.png 1x,
+          ./images/desktop/about/milkboxd1@2x.png 2x
         "
         media="(min-width:1280px)"
-        type="image/png" />
+        type="image/png"
+      />
 
       <source
         srcset="
-          ./images/tablet/about/cowmilkt1@1x.webp 1x,
-          ./images/tablet/about/cowmilkt1@2x.webp 2x
-        "
-        media="(min-width:768px)"
-        type="image/webp" />
-      <source
-        srcset="
-          ./images/tablet/about/cowmilkt1@1x.png 1x,
-          ./images/tablet/about/cowmilkt1@2x.png 2x
-        "
-        media="(min-width:768px)"
-        type="image/png" />
-
-      <source
-        srcset="
-          ./images/mobile/about/cowmilkm1@1x.webp 1x,
-          ./images/mobile/about/cowmilkm1@2x.webp 2x
+          ./images/mobile/about/milkboxm1@1x.webp 1x,
+          ./images/mobile/about/milkboxm1@2x.webp 2x
         "
         media="(min-width:480px)"
-        type="image/webp" />
+        type="image/webp"
+      />
       <source
         srcset="
-          ./images/mobile/about/cowmilkm1@1x.png 1x,
-          ./images/mobile/about/cowmilkm1@2x.png 2x
+          ./images/mobile/about/milkboxm1@1x.png 1x,
+          ./images/mobile/about/milkboxm1@2x.png 2x
         "
         media="(min-width:480px)"
-        type="image/png" />
-      <img
-        src="./images/mobile/about/cowmilkm1@1x.png"
-        alt="кувшин молока био-эко и изображение коровы"
-    /></picture>
-
-    <p class="lead">
-      Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem
-      eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-    </p>
-    <p class="description">
-      Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
-      imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
-      Cras massa nibh, tincidunt.
-    </p>
-    <p class="text">Aliquam erat volutpat. Aenean accumsan.</p>
-
-    <button class="btn-light" type="button">Read more</button>
+        type="image/png"
+      />
+      <img src="./images/mobile/about/milkboxm1@1x.png" alt="всплеск молока фоновое изображение" />
+    </picture>
   </div>
 </section>
