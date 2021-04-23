@@ -1,5 +1,6 @@
 // миксин для флексов, например @include flex-center;
 @mixin flex-center {
+  // уточнить у ментора, обязательны ли скобки () без аргумента
   display: flex;
   justify-content: center;
   align-items: center;
