@@ -1,5 +1,6 @@
 .header {
   padding-top: 6px;
+  margin-bottom: 300px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,14 +8,28 @@
 
 .icon-burger {
   fill: #212121;
-  width: 20px;
-  height: 12px;
+  width: 30px;
+  height: 40px;
 }
 
 .burger-btn {
-  background-color: palevioletred;
+  background-color: transparent;
   border: none;
   padding: 0;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 60px 20px;
+  background-color: #e17992;
+}
+
+.mobile-menu__icon-close_btn {
+  fill: #212121;
 }
 
 .mobile-menu__btn {
