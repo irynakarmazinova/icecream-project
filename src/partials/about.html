@@ -71,8 +71,7 @@
         </p>
         <p class="text">Aliquam erat volutpat. Aenean accumsan.</p>
 
-        <!-- почему не работает ховер и фокус в версии таблетка и мобилка?-разбираюсь -->
-        <button class="btn-light" type="button">
+        <button class="btn-light" type="button" data-modal-open>
           Read more
           <svg class="icon-arrow-right" width="5" height="9">
             <use href="./images/sprite/sprite.svg#icon-arrow-right"></use>
@@ -120,5 +119,26 @@
       />
       <img src="./images/mobile/about/milkboxm1@1x.png" alt="всплеск молока фоновое изображение" />
     </picture>
+  </div>
+
+  <!-- модальное окно с детальным описанием продукта -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <h3 class="modal__title">Fusce velit laoreet</h3>
+      <p class="modal__description">
+        Aliquam erat volutpat. Aenean accumsan. Curabitur lacinia enim at ex blandit, vel
+        pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod
+        nisl suscipit ligula volutpat, a feugiat urna maximus. Curabitur lacinia enim at ex blandit,
+        vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+        euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+      </p>
+
+      <!-- кнопка закрытия модального окна -->
+      <button type="button" class="close-btn close-btn__modal" data-modal-close>
+        <svg class="close-btn__modal-icon" width="30" height="30">
+          <use href="./images/sprite/sprite.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </section>
