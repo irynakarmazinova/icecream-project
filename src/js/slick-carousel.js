@@ -3,8 +3,8 @@
 $(document).ready(function(){
   $('.slider').slick({
     arrows: false,
-    dots: true,
-    autoplay: true
+    dots: true
+    // autoplay: true
   });
 });
 
