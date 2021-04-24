@@ -244,7 +244,12 @@
   .contacts-section {
     padding-top: 66px;
     padding-bottom: 82px;
-    background-image: linear-gradient(to bottom, $secondary-color 23%, $primary-bgcolor 10%);
+
+    background-image: url('/images/desktop/contacts/contacts-background.png'),
+      linear-gradient(to bottom, $secondary-color 23%, $primary-bgcolor 10%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 45%;
   }
 
   .contacts-list {
