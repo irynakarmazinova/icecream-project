@@ -1,10 +1,59 @@
 .about {
+  position: relative;
   padding-top: 125px;
+  padding-bottom: 20px;
+
   background-color: $primary-bgcolor;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 130px;
+  }
+}
+
+.flex-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.cow-image-box {
+  width: 100%;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 46px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    height: 339px;
+    margin-right: 17px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 516px;
+    height: 516px;
+    margin-right: 74px;
+  }
+}
+
+.description-box {
+  z-index: 1;
+  @media screen and (max-width: 767px) {
+    padding: 0 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    margin-top: 50px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 463px;
+    margin-top: 56px;
+  }
 }
 
 .lead {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   font-family: $primary-font;
   @include font(500, 12px, 19px, 0em);
@@ -21,7 +70,7 @@
 }
 
 .description {
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 
   font-family: $primary-font;
   @include font(500, 12px, 19px, 0em);
@@ -39,5 +88,28 @@
 
 .text {
   @extend .description;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 62px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 45px;
+  }
+}
+
+.milk-image-box {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  width: 100%;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: -80px;
+  }
 }

@@ -15,4 +15,8 @@
   @media screen and (min-width: 1280px) {
     @include font(400, 30px, 34px, 0.04em);
   }
+
+  &_center {
+    text-align: center;
+  }
 }

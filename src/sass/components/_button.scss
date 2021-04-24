@@ -1,6 +1,7 @@
 // для описания стилей всех кнопок
 .btn-light {
   @include flex-center;
+  padding: 11px 37px;
 
   font-family: $primary-font;
   @include font(700, 14px, 18px, 0em);
@@ -8,9 +9,58 @@
   color: $primary-color;
   background: $secondary-color;
   border-radius: 22px;
+  border-color: transparent;
+
+  transition: color 250ms linear, background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: $secondary-color;
+    background: $primary-color;
+  }
 }
 
-// .btn-light::after {
-//   content: '';
-//   background-image: ;
-// }
+.icon-arrow-right {
+  margin-left: 14px;
+  fill: currentColor;
+}
+// кнопка закрытия
+.close-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  background-color: transparent;
+  color: $suptitle-color;
+
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $primary-color;
+  }
+
+  &__modal {
+    top: 8px;
+    right: 8px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  // &__mobile {
+  //   top: 10px;
+  //   right: 35px;
+  //   color: var(--primary-text-color);
+  //   border: none;
+
+  //   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  //   &:hover,
+  //   &:focus {
+  //     fill: var(--accent-text-color);
+  //   }
+  // }
+}
