@@ -2,8 +2,8 @@
 .modal {
   position: absolute;
   z-index: 2;
-  min-width: 240px;
-  min-height: 485px;
+  width: 260px;
+  height: 400px;
   padding: 44px;
 
   background-color: $first-card-bgcolor;
@@ -15,15 +15,16 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 400ms linear;
+  overflow-y: scroll;
 
-  @media screen and (max-width: 479px) {
-    min-width: 280px;
-  }
+  // @media screen and (max-width: 479px) {
+  //   min-width: 280px;
+  // }
 
-  @media screen and (min-width: 1200px) {
-    min-width: 330px;
-    min-height: 525px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   min-width: 330px;
+  //   min-height: 525px;
+  // }
 }
 
 .is-hidden {
