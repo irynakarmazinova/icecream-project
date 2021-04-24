@@ -1,0 +1,149 @@
+.products{
+    &__container{
+        padding-top: 121px;
+        padding-bottom: 94px;
+        padding-left: 20px;
+        padding-right: 20px;
+        @media screen and (min-width: 768px) and (max-width: 1279px){
+            padding-bottom: 121px;
+            padding-left: 34px;
+            padding-right: 34px;
+        }
+        @media screen and (min-width: 1280px){
+            padding-top: 127px;
+            padding-left: 117px;
+            padding-right: 116px;
+        }
+    }
+    &__suptitle{
+        display: flex;
+        justify-content: center;
+        @media screen and (min-width: 768px) and (max-width: 1279px){
+            @include font(400, 29px, 29.77px, 0em);
+        }
+        @media screen and (min-width: 1280px){
+            @include font(400, 30px, 34.35px, 0.04em)
+
+        }
+    }
+    &__title{
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+        @media screen and (min-width: 768px) and (max-width: 1279px){
+            @include font(400, 48px, 54.94px, 0.04em);
+            margin-top: 15px;
+        }
+        @media screen and (min-width: 1280px){
+            @include font(400, 58px, 66.41px, 0.06em)
+        }
+    }
+    &__grid{
+        display: flex;
+        flex-direction: column;
+        margin-top: 144px;
+        @media screen and (min-width: 768px) and (max-width: 1279px){
+            flex-direction: row;
+        }
+    }
+    &__item:not(:last-child){
+        margin-bottom: 130px;
+        @media screen and (min-width: 768px) and (max-width: 1279px){
+            margin-bottom: 0px;
+            margin-right: 20px;
+        }
+    }
+    .icecofee{
+        background-color: $second-card-bgcolor;
+    }
+    .milkshakes{
+        background-color: $third-card-bgcolor;
+    }
+    &__item{
+        padding-bottom: 40px;
+        padding: 0 40px;
+        @media screen and (min-width: 768px) and (max-width: 1279px){
+            padding: 0 11px;
+        }
+        @media screen and (min-width: 1280px){
+            padding: 0 45px;
+        }
+    }
+    &__card{
+        background-color: $first-card-bgcolor;
+        border-radius: 24px;
+    }
+    &__image{
+            width: 100%;
+            @media screen and (min-width: 768px) and (max-width: 1279px) {
+             
+            }
+    }
+    &__hidden{
+        display: flex;
+        justify-content: center;
+        padding-top: 22px;
+        font-family: $acent-font;
+        color: white;
+        @include font(400, 20px, 22.9px, 0.04em);
+        @media screen and (min-width: 768px) and (max-width: 1279px){
+            padding-top: 30px;
+        }
+        @media screen and (min-width: 1280px){
+            padding-top: 38px;
+        }
+    }
+    &__dotes{
+        display: flex;
+        justify-content: center;
+    }
+    &__dotes::before,
+    &__dotes::after{
+        content: '';
+       
+        width: 6px;
+        height: 6px;
+        fill: white;
+    
+    }
+    &__svg{
+        width: 6px;
+        height: 6px;
+        fill: white;
+    }
+    &__description{
+        margin-top: 30px;
+        text-align: center;
+        font-family: $primary-font;
+        @include font(700, 14px, 21.28px, 0em);
+        @media screen and (min-width: 768px) and (max-width: 1279px){
+            @include font(700, 14px, 26.64px, 0.04em)
+        }
+        @media screen and (min-width: 1280px){
+            @include font(700, 16px, 28.16px, 0.04em)
+        }
+    }
+    &__btn{
+        display: flex;
+        justify-content: center;
+        margin: 40px auto ;
+       
+        
+        @include flex-center;
+        
+         border-radius: 50%;
+            
+            border: transparent;
+            background-color: $secondary-color;
+            width: 26px;
+            height: 26px;
+    }
+.arrow-svg{
+        width: 6px;
+        height: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
