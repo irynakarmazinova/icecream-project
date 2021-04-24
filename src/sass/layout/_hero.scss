@@ -17,10 +17,7 @@
 .hero__title {
   position: sticky;
   font-family: $acent-font;
-  font-weight: normal;
-  font-size: 26px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
+  @include font(400, 26px, 30px, 0.04em);
   text-transform: uppercase;
   color: $secondary-color;
   width: 218px;
@@ -28,35 +25,28 @@
   z-index: 100;
 
   @media screen and (min-width: 768px) {
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 1.137;
+    @include font(400, 22px, 25px, 0.04em);
     width: 162px;
     color: $secondary-color;
     margin-bottom: 20px;
   }
   @media screen and (min-width: 1280px) {
     min-width: 277px;
-    font-size: 38px;
-    line-height: 1.16;
+    @include font(400, 38px, 44px, 0.04em);
+
     margin-bottom: 25px;
   }
 }
 .hero__span {
-  font-weight: normal;
-  font-size: 48px;
-  line-height: 96.5%;
-  /* or 46px */
-
+  @include font(400, 48px, 46px, 0.04em);
   text-transform: uppercase;
 
   color: $primary-color;
   @media screen and (min-width: 768px) {
-    font-size: 34px;
+    @include font(400, 34px, 31px, 0.04em);
   }
   @media screen and (min-width: 1280px) {
-    font-size: 58px;
-    line-height: 90.5%;
+    @include font(400, 58px, 52px, 0.04em);
   }
 }
 .hero__list {
@@ -74,9 +64,8 @@
   z-index: 50;
 
   font-family: $primary-font;
-  font-weight: normal;
-  font-size: 8px;
-  line-height: 1.25;
+  @include font(400, 8px, 18px, 0em);
+
   display: inline-flex;
   align-items: center;
   text-align: center;
@@ -186,11 +175,11 @@
     text-align: right;
     position: absolute;
     right: 42px;
-    top: 10px;
+    top: 12px;
   }
   @media screen and (min-width: 1280px) {
-    top: 19px;
-    right: 138px;
+    top: 15px;
+    right: 120px;
   }
 }
 .hero-avantages__item:not(:last-child) {
@@ -204,27 +193,24 @@
   top: 0;
   right: 44px;
   font-family: $acent-font;
-  font-size: 28px;
-  line-height: 1.14;
-  letter-spacing: 0.04em;
+  @include font(400, 28px, 32px, 0.04em);
   text-transform: uppercase;
   color: $primary-color;
   z-index: 500;
   @media screen and (min-width: 1280px) {
-    font-size: 46px;
-    line-height: 1.15;
+    @include font(400, 46px, 53px, 0.04em);
+
+    margin-bottom: 2px;
   }
 }
 .hero__suptext {
-  font-weight: normal;
-  font-size: 8px;
-  line-height: 1.25;
+  @include font(400, 8px, 10px, 0em);
+
   text-align: right;
 
   color: $secondary-color;
   @media screen and (min-width: 1280px) {
-    font-size: 14px;
-    line-height: 1.28;
+    @include font(400, 14px, 18px, 0em);
   }
 }
 .mini-circle {
@@ -236,8 +222,8 @@
     right: 34px;
     top: 8px;
     @media screen and (min-width: 1280px) {
-      top: 15px;
-      right: 120px;
+      top: 11px;
+      right: 102px;
     }
   }
 }
@@ -291,16 +277,13 @@
 }
 .hero__overlay_text {
   @include flex-center;
-  font-weight: normal;
-  font-size: 8px;
-  line-height: 1.5;
+  @include font(400, 8px, 12px, 0em);
   color: $secondary-color;
   width: 114px;
   margin-bottom: 7px;
   @media screen and (min-width: 1280px) {
+    @include font(400, 14px, 20px, 0em);
     width: 200px;
-    font-size: 14px;
-    line-height: 1.4;
   }
 }
 .hero__overlay_icon {
