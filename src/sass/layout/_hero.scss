@@ -64,7 +64,7 @@
   z-index: 50;
 
   font-family: $primary-font;
-  @include font(400, 8px, 18px, 0em);
+  @include font(400, 8px, 10px, 0em);
 
   display: inline-flex;
   align-items: center;
@@ -82,8 +82,8 @@
     background: $primary-color;
   }
   @media screen and (min-width: 1280px) {
-    font-size: 14px;
-    line-height: 1.28;
+    @include font(400, 14px, 18px, 0em);
+
     padding: 12px 21px;
   }
 }
@@ -277,12 +277,12 @@
 }
 .hero__overlay_text {
   @include flex-center;
-  @include font(400, 8px, 12px, 0em);
+  @include font(400, 8px, 12px, 0.04em);
   color: $secondary-color;
   width: 114px;
   margin-bottom: 7px;
   @media screen and (min-width: 1280px) {
-    @include font(400, 14px, 20px, 0em);
+    @include font(400, 14px, 20px, 0.04em);
     width: 200px;
   }
 }
