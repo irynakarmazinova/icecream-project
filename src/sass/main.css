@@ -906,7 +906,7 @@ button {
 }
 
 .contacts-btn-white {
-  padding: 10px 15px;
+  padding: 10px 30px;
   background: #ffffff;
   border-radius: 22px;
   border-color: transparent;
@@ -1017,31 +1017,25 @@ button {
     margin-right: 15px;
   }
   .contacts-btn-white {
-    padding: 10px 20px;
+    padding: 10px 37px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contacts-section {
     padding-top: 66px;
     padding-bottom: 82px;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #ffffff), color-stop(10%, #fff5f6));
-    background-image: linear-gradient(to bottom, #ffffff 15%, #fff5f6 10%);
-  }
-  .contacts-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(23%, #ffffff), color-stop(10%, #fff5f6));
+    background-image: linear-gradient(to bottom, #ffffff 23%, #fff5f6 10%);
   }
   .contacts-list__item {
-    width: 32%;
-    padding: 50px 32px;
+    padding: 51px 44px 62px 44px;
   }
   .contacts-list__item:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 31px;
   }
   .institution {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
   .institution__name {
     font-size: 16px;
@@ -1051,50 +1045,44 @@ button {
     padding-bottom: 30px;
   }
   .city__name {
-    font-size: 14px;
-    line-height: 1.85714;
+    font-size: 16px;
+    line-height: 1.875;
   }
   .city__description {
-    font-size: 14px;
-    line-height: 1.64286;
+    font-size: 16px;
+    line-height: 1.875;
   }
   .timetable {
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: 32px;
+    padding-top: 32px;
   }
   .timetable__day {
-    font-size: 14px;
-    line-height: 1.85714;
+    font-size: 16px;
+    line-height: 1.875;
   }
   .timetable__time {
-    font-size: 14px;
-    line-height: 1.85714;
+    font-size: 16px;
+    line-height: 1.875;
   }
   .timetable__time:not(:last-child) {
     margin-bottom: 16px;
   }
   .contacts {
-    padding-top: 30px;
+    padding-top: 32px;
   }
   .contacts__phone, .contacts__mail {
-    font-size: 14px;
-    line-height: 1.85714;
+    font-size: 16px;
+    line-height: 1.875;
   }
   .contacts-btn-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 86px;
+    margin-top: 83px;
   }
   .contacts-btn {
-    padding: 10px 29px;
+    padding: 10px 31px;
     margin-right: 15px;
   }
   .contacts-btn-white {
-    padding: 10px 20px;
+    padding: 10px 40px;
   }
 }
 /*# sourceMappingURL=main.css.map */

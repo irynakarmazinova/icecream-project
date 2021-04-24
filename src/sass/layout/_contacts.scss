@@ -132,7 +132,7 @@
     margin: 10px auto 0 auto;
   }
 
-  padding: 10px 15px;
+  padding: 10px 30px;
   background: $secondary-color;
   border-radius: 22px;
   border-color: transparent;
@@ -152,6 +152,7 @@
   }
 }
 
+// Стили для планшета
 @media screen and(min-width:768px) {
   .contacts-section {
     padding-top: 60px;
@@ -234,31 +235,29 @@
   }
 
   .contacts-btn-white {
-    padding: 10px 20px;
+    padding: 10px 37px;
   }
 }
 
-@media screen and(min-width:1200px) {
+// Стили для десктопа
+@media screen and(min-width:1280px) {
   .contacts-section {
     padding-top: 66px;
     padding-bottom: 82px;
-    background-image: linear-gradient(to bottom, $secondary-color 15%, $primary-bgcolor 10%);
+    background-image: linear-gradient(to bottom, $secondary-color 23%, $primary-bgcolor 10%);
   }
 
   .contacts-list {
-    display: flex;
-
     &__item {
-      width: 32%;
-      padding: 50px 32px;
+      padding: 51px 44px 62px 44px;
       &:not(:last-child) {
-        margin-right: 20px;
+        margin-right: 31px;
       }
     }
   }
 
   .institution {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     &__name {
       font-size: 16px;
       line-height: (30 / 16);
@@ -268,25 +267,25 @@
   .city {
     padding-bottom: 30px;
     &__name {
-      font-size: 14px;
-      line-height: (26 / 14);
+      font-size: 16px;
+      line-height: (30 / 16);
     }
     &__description {
-      font-size: 14px;
-      line-height: (23 / 14);
+      font-size: 16px;
+      line-height: (30 / 16);
     }
   }
 
   .timetable {
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: 32px;
+    padding-top: 32px;
     &__day {
-      font-size: 14px;
-      line-height: (26 / 14);
+      font-size: 16px;
+      line-height: (30 / 16);
     }
     &__time {
-      font-size: 14px;
-      line-height: (26 / 14);
+      font-size: 16px;
+      line-height: (30 / 16);
       &:not(:last-child) {
         margin-bottom: 16px;
       }
@@ -294,26 +293,24 @@
   }
 
   .contacts {
-    padding-top: 30px;
+    padding-top: 32px;
     &__phone,
     &__mail {
-      font-size: 14px;
-      line-height: (26 / 14);
+      font-size: 16px;
+      line-height: (30 / 16);
     }
   }
 
   .contacts-btn-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 86px;
+    margin-top: 83px;
   }
 
   .contacts-btn {
-    padding: 10px 29px;
+    padding: 10px 31px;
     margin-right: 15px;
   }
 
   .contacts-btn-white {
-    padding: 10px 20px;
+    padding: 10px 40px;
   }
 }
