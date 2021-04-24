@@ -27,6 +27,18 @@
   }
 }
 
+.footer__heading {
+  width: 234px;
+
+  @media screen and (min-width: 768px) {
+    width: 340px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: unset;
+  }
+}
+
 // .footer__name_first {
 //   width: 232px;
 //   font-family: $acent-font;
