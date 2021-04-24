@@ -19,7 +19,7 @@
   height: 85px;
 }
 
-.reviews__client--border {
+.reviews__client_border {
   position: relative;
   margin: 0 auto;
   height: auto;
@@ -106,7 +106,7 @@
   }
 }
 
-.reviews__client--text {
+.reviews__client_text {
   margin: 0 auto;
   position: relative;
   z-index: 2;
@@ -148,7 +148,7 @@
   }
 }
 
-.reviews__client--name {
+.reviews__client_name {
   font-weight: 500;
 
   font-size: 14px;
@@ -163,7 +163,7 @@
   }
 }
 
-.reviews__client--icon {
+.reviews__client_icon {
   margin: 0 auto;
   margin-bottom: 30px;
   width: unset;
