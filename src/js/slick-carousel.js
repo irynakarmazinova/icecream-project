@@ -3,9 +3,9 @@
 $(document).ready(function(){
   $('.slider').slick({
     arrows: false,
-    dots: true
+    dots: true,
     // centerMode: true
-    // autoplay: true
+    autoplay: true
   });
 });
 
