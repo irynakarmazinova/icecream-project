@@ -1,0 +1,113 @@
+.advantages {
+    position: relative;
+    background-color: $primary-bgcolor;
+}
+
+.advantages__container {
+    padding-top: 20px;
+    padding-bottom: 70px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 66px;
+        padding-bottom: 70px;
+    }
+    @media screen and (min-width: 340px) {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+}
+
+.advantages__list {
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 767px) {
+        max-width: 660px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: -15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        margin: -15px;
+    }
+}
+
+.advantages__items {
+    @media screen and (min-width: 320px) {
+        max-width: 450px;
+        justify-items: center;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: calc((100% - 60px) / 3);
+        margin: 15px;
+    }
+      
+      @media screen and (min-width: 1200px) {
+        width: calc((100% - 120px) / 3);
+        &:not(:first-child) {
+          margin-left: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199) {
+    .feachers__items--bottom {
+      margin-bottom: 30px;
+    }
+}
+
+.advantages__img {
+    padding-bottom: 36px;
+    /*margin-bottom: 36px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages__title {
+    font-family: $acent-font;
+    color: $primary-color;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.04em;
+
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+        color: $primary-color;
+        font-size: 38px;
+        line-height: 42px;
+        letter-spacing: 0.04em;
+    }
+}
+
+.advantages__text {
+    font-family: $primary-font;
+    color: $dark-color;
+    font-weight: bold;
+    
+    @media screen and (min-width: 320px) {
+        font-size: 12px;
+        line-height: 170%;
+        letter-spacing: 0.02em;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-size: 14px;
+        line-height: 174%;
+        letter-spacing: 0.02em;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 176%;
+        letter-spacing: 0.02em;
+    }
+}
