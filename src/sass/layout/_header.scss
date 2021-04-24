@@ -1,0 +1,25 @@
+.header {
+  padding-top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-burger {
+  fill: #212121;
+  width: 20px;
+  height: 12px;
+}
+
+.burger-btn {
+  background-color: palevioletred;
+  border: none;
+  padding: 0;
+}
+
+.mobile-menu__btn {
+  max-width: 209px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+}
