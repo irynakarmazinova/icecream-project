@@ -30,3 +30,15 @@
     margin-bottom: 55px;
   }
 }
+
+.title__width {
+  width: 234px;
+
+  @media screen and (min-width: 768px) {
+    width: 340px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: unset;
+  }
+}
