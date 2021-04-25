@@ -86,13 +86,13 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 11px 37px;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
@@ -105,7 +105,8 @@ button {
   transition: color 250ms linear, background-color 250ms linear;
 }
 
-.btn-light:hover, .btn-light:focus {
+.btn-light:hover,
+.btn-light:focus {
   color: #ffffff;
   background: #d41443;
 }
@@ -121,14 +122,14 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 0;
   background-color: transparent;
-/*   color: #ffa5ba; */
+  /*   color: #ffa5ba; */
 
   fill: #ffffff;
 
@@ -137,20 +138,19 @@ button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:hover, .close-btn:focus {
+.close-btn:hover,
+.close-btn:focus {
   fill: #d41443;
 }
 
 .close-btn__modal {
   top: 8px;
   right: 8px;
-/*   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1); */
   border: transparent;
 }
 
 .title {
-  font-family: "Titan One", cursive;
+  font-family: 'Titan One', cursive;
   font-weight: 400;
   font-size: 34px;
   line-height: 1.15;
@@ -199,7 +199,7 @@ button {
 
 .suptitle {
   margin-bottom: 15px;
-  font-family: "Titan One", cursive;
+  font-family: 'Titan One', cursive;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.17;
@@ -238,7 +238,6 @@ button {
   width: 100vw;
   height: 100vh;
 
-/*   background-color: rgba(255, 165, 186, 0.496); */
   background-color: rgba(255, 184, 202, 0.149);
 
   overflow-y: scroll;
@@ -246,7 +245,7 @@ button {
   visibility: visible;
   pointer-events: initial;
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   -webkit-transition: -webkit-transform 400ms linear;
   transition: -webkit-transform 400ms linear;
   transition: transform 400ms linear;
@@ -255,49 +254,43 @@ button {
 
 .modal {
   position: absolute;
-  z-index: 2;
-/*   min-width: 220px;
-  min-height: 485px;
-  padding: 40px;
-  background-color: #ffffff; */
-
-  width: 260px;
-  height: 400px;
+  width: 310px;
+  height: 380px;
   padding: 44px;
   background-color: #ffb8ca;
 
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   -webkit-transition: -webkit-transform 400ms linear;
   transition: -webkit-transform 400ms linear;
   transition: transform 400ms linear;
   transition: transform 400ms linear, -webkit-transform 400ms linear;
-}
 
-/* @media screen and (max-width: 479px) {
-  .modal {
-    min-width: 320px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .modal {
-    min-width: 528px;
-    min-height: 581px;
-  } */
   overflow-y: scroll;
+
+  @media screen and (min-width: 768px) {
+    min-width: 350px;
+    min-height: 400px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-width: 420px;
+    min-height: 470px;
+  }
 }
 
 .is-hidden {
   opacity: 0;
   pointer-events: none;
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
   -webkit-transition: opacity 400ms linear, -webkit-transform 400ms ease-out;
   transition: opacity 400ms linear, -webkit-transform 400ms ease-out;
   transition: transform 400ms ease-out, opacity 400ms linear;
@@ -308,12 +301,8 @@ button {
   position: relative;
   margin-bottom: 20px;
   text-align: center;
-  font-family: "Titan One", cursive;
+  font-family: 'Titan One', cursive;
   font-weight: 400;
-
-/*   font-size: 22px;
-  line-height: 1;
-  letter-spacing: 0.02em; */
   font-size: 30px;
   line-height: 1.13;
   letter-spacing: 0.04em;
@@ -323,16 +312,8 @@ button {
 }
 
 .modal__description {
-/*   font-family: "DM Sans", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.25;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #ffa5ba; */
-
   margin-bottom: 40px;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.75;
@@ -342,14 +323,13 @@ button {
 }
 
 .modal__description_dark {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 10px;
   line-height: 1.8;
   letter-spacing: 0em;
   color: #907e82;
   text-align: center;
-
 }
 
 .header {
@@ -358,11 +338,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .icon-burger {
@@ -410,7 +390,7 @@ button {
 .hero__title {
   position: -webkit-sticky;
   position: sticky;
-  font-family: "Titan One", cursive;
+  font-family: 'Titan One', cursive;
   font-weight: 400;
   font-size: 26px;
   line-height: 1.15;
@@ -477,8 +457,8 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .hero__item:not(:last-child) {
@@ -495,7 +475,7 @@ button {
   position: -webkit-sticky;
   position: sticky;
   z-index: 50;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
@@ -504,8 +484,8 @@ button {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   padding: 7px 14px;
   color: #d41443;
@@ -515,7 +495,8 @@ button {
   transition: color 250ms linear, background-color 250ms linear;
 }
 
-.hero__link:hover, .hero__link:focus {
+.hero__link:hover,
+.hero__link:focus {
   color: #ffffff;
   background: #d41443;
 }
@@ -645,11 +626,11 @@ button {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     text-align: right;
     position: absolute;
     right: 42px;
@@ -679,7 +660,7 @@ button {
   position: sticky;
   top: 0;
   right: 44px;
-  font-family: "Titan One", cursive;
+  font-family: 'Titan One', cursive;
   font-weight: 400;
   font-size: 28px;
   line-height: 1.14;
@@ -769,11 +750,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 50%;
   padding: 0;
   margin: 0;
@@ -785,7 +766,8 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__overlay_btn:hover, .hero__overlay_btn:focus {
+.hero__overlay_btn:hover,
+.hero__overlay_btn:focus {
   background-color: #d41443;
   border-radius: 50%;
 }
@@ -816,11 +798,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.5;
@@ -846,7 +828,8 @@ button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__overlay_icon:hover, .hero__overlay_icon:focus {
+.hero__overlay_icon:hover,
+.hero__overlay_icon:focus {
   fill: #ffffff;
   background-color: #d41443;
   border-radius: 50%;
@@ -925,7 +908,7 @@ button {
 
 .lead {
   margin-bottom: 30px;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.58;
@@ -951,9 +934,10 @@ button {
   }
 }
 
-.description, .text {
+.description,
+.text {
   margin-bottom: 12px;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.58;
@@ -962,7 +946,8 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .description, .text {
+  .description,
+  .text {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.79;
@@ -971,7 +956,8 @@ button {
 }
 
 @media screen and (min-width: 1280px) {
-  .description, .text {
+  .description,
+  .text {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.93;
@@ -1074,8 +1060,8 @@ button {
     display: flex;
     /*flex-wrap: wrap;*/
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -1085,8 +1071,8 @@ button {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -1153,7 +1139,7 @@ button {
 }
 
 .advantages__title {
-  font-family: "Titan One", cursive;
+  font-family: 'Titan One', cursive;
   color: #d41443;
   font-weight: 400;
   font-size: 48px;
@@ -1184,7 +1170,7 @@ button {
 }
 
 .advantages__text {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   color: #000000;
   font-weight: bold;
 }
@@ -1230,7 +1216,14 @@ button {
 .gallery {
   padding-top: 49px;
   padding-bottom: 40px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(43.6%, #fff5f6), color-stop(43.6%, #ffffff), to(#ffffff));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(43.6%, #fff5f6),
+    color-stop(43.6%, #ffffff),
+    to(#ffffff)
+  );
   background-image: linear-gradient(to bottom, #fff5f6 43.6%, #ffffff 43.6%, #ffffff);
 }
 
@@ -1251,7 +1244,7 @@ button {
 .reviews {
   padding-top: 40px;
   padding-bottom: 43px;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -1290,7 +1283,7 @@ button {
   display: block;
   width: 54px;
   height: 40px;
-  background-image: url("../images/reviews/quotes.svg");
+  background-image: url('../images/reviews/quotes.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1320,7 +1313,7 @@ button {
   width: 32px;
   height: 4px;
   margin-top: 18px;
-  background-image: url("../images/reviews/dots.svg");
+  background-image: url('../images/reviews/dots.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1380,7 +1373,13 @@ button {
 @media screen and (min-width: 320px) {
   .reviews__client--text {
     width: 157px;
-    background-image: repeating-linear-gradient(to bottom, transparent, transparent 29px, #e1e1e1 29px, #e1e1e1 30px);
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 29px,
+      #e1e1e1 29px,
+      #e1e1e1 30px
+    );
   }
 }
 
@@ -1390,7 +1389,13 @@ button {
     font-size: 14px;
     line-height: 2.14;
     letter-spacing: 0.04em;
-    background-image: repeating-linear-gradient(to bottom, transparent, transparent 28px, #e1e1e1 28px, #e1e1e1 29px);
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 28px,
+      #e1e1e1 28px,
+      #e1e1e1 29px
+    );
   }
 }
 
@@ -1444,16 +1449,16 @@ button {
 
 .slider .slick-dots {
   -webkit-padding-start: 0;
-          padding-inline-start: 0;
+  padding-inline-start: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .slider .slick-dots li {
@@ -1466,7 +1471,7 @@ button {
 
 .slider .slick-dots li.slick-active button {
   background-color: #ffffff;
-  background-image: url("../images/reviews/home.svg");
+  background-image: url('../images/reviews/home.svg');
   background-size: contain;
 }
 
@@ -1481,7 +1486,13 @@ button {
 }
 
 .contacts-section {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(8%, #ffffff), color-stop(8%, #fff5f6));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(8%, #ffffff),
+    color-stop(8%, #fff5f6)
+  );
   background-image: linear-gradient(to bottom, #ffffff 8%, #fff5f6 8%);
   padding-top: 43px;
   padding-bottom: 57px;
@@ -1491,7 +1502,7 @@ button {
   padding: 43px 21px;
   background: #ffffff;
   -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 }
 
@@ -1560,7 +1571,8 @@ button {
   padding-top: 25px;
 }
 
-.contacts__phone, .contacts__mail {
+.contacts__phone,
+.contacts__mail {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
@@ -1574,11 +1586,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: #f0d1a5;
   border-radius: 6px;
   width: 80px;
@@ -1610,7 +1622,8 @@ button {
   }
 }
 
-.contacts-accent-btn:hover, .contacts-accent-btn:focus {
+.contacts-accent-btn:hover,
+.contacts-accent-btn:focus {
   color: #d41443;
   background-color: #ffffff;
 }
@@ -1659,7 +1672,13 @@ button {
   .contacts-section {
     padding-top: 60px;
     padding-bottom: 76px;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #ffffff), color-stop(10%, #fff5f6));
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(15%, #ffffff),
+      color-stop(10%, #fff5f6)
+    );
     background-image: linear-gradient(to bottom, #ffffff 15%, #fff5f6 10%);
   }
   .contacts-list {
@@ -1725,7 +1744,8 @@ button {
   .contacts {
     padding-top: 30px;
   }
-  .contacts__phone, .contacts__mail {
+  .contacts__phone,
+  .contacts__mail {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.86;
@@ -1736,8 +1756,8 @@ button {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-top: 86px;
   }
   .contacts-accent-btn {
@@ -1753,8 +1773,10 @@ button {
   .contacts-section {
     padding-top: 66px;
     padding-bottom: 82px;
-    background-image: url("/images/desktop/contacts/contacts-background.png"), -webkit-gradient(linear, left top, left bottom, color-stop(23%, #ffffff), color-stop(10%, #fff5f6));
-    background-image: url("/images/desktop/contacts/contacts-background.png"), linear-gradient(to bottom, #ffffff 23%, #fff5f6 10%);
+    background-image: url('/images/desktop/contacts/contacts-background.png'),
+      -webkit-gradient(linear, left top, left bottom, color-stop(23%, #ffffff), color-stop(10%, #fff5f6));
+    background-image: url('/images/desktop/contacts/contacts-background.png'),
+      linear-gradient(to bottom, #ffffff 23%, #fff5f6 10%);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 45%;
@@ -1811,7 +1833,8 @@ button {
   .contacts {
     padding-top: 32px;
   }
-  .contacts__phone, .contacts__mail {
+  .contacts__phone,
+  .contacts__mail {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.81;
@@ -1855,12 +1878,12 @@ button {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     margin-bottom: 91px;
   }
 }
@@ -1892,8 +1915,8 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   margin-top: 43px;
 }
 
@@ -1918,18 +1941,19 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 32px;
   height: 32px;
   border-radius: 50%;
   background-color: #fea5bb;
 }
 
-.footer__social_link:hover, .footer__social_link:focus {
+.footer__social_link:hover,
+.footer__social_link:focus {
   background-color: #d41443;
 }
 
@@ -1947,8 +1971,8 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 @media screen and (min-width: 1280px) {
@@ -1958,7 +1982,7 @@ button {
 }
 
 .footer__appeal {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.83;
@@ -1986,7 +2010,7 @@ button {
 }
 
 .footer__tel {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
@@ -2019,7 +2043,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .footer__copyright::before {
@@ -2034,12 +2058,12 @@ button {
   width: 149px;
   text-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "DM Sans", sans-serif;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
