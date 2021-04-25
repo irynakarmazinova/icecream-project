@@ -107,7 +107,7 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: #fea5bb;
+  background-color: $icon-bgcolor;
 
   &:hover,
   &:focus {
@@ -151,6 +151,11 @@
   @include font(500, 12px, 22px, 0em);
   color: $primary-color;
   font-style: normal;
+  
+  &:hover,
+    &:focus {
+    color:$suptitle-color;
+    }
 
   @media screen and (min-width: 768px) {
     @include font(500, 14px, 26px, 0em);
@@ -170,7 +175,7 @@
   position: absolute;
   width: 100vw;
   content: '';
-  border: 1px solid #e1e1e1;
+  border: 1px solid $band-color;
 }
 
 .footer__copyright_text {
