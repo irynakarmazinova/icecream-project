@@ -1,1 +1,25 @@
 // для описания стилей мобильного меню
+.buy-now__btn {
+  min-width: 150px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  @include font(700, 16px, 21px, 0.05em);
+  @include flex-center;
+  margin-bottom: 20px;
+  color: #d41443;
+  border: none;
+}
+
+.mobile-menu__link {
+  @include font(700, 14px, 18px, 0.03em);
+  color: #fff;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #e18298;
+  }
+}
