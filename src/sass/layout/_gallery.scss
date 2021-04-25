@@ -42,6 +42,10 @@
   @media screen and(min-width:1280px) {
     width: 140px;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .grid__item_gigante {
@@ -54,4 +58,10 @@
   @media screen and(min-width:1280px) {
     width: 280px;
   }
+}
+
+.animate__pulse:hover,
+.animate__pulse:focus {
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
