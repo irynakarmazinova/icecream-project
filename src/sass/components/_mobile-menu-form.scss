@@ -12,12 +12,13 @@
   transition: transform 250ms linear;
   display: flex;
   flex-direction: column;
+  overflow: auto;
 }
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
     width: 40vw;
-    padding: 60px 34px;
+    padding: 60px 34px 60px 0px;
   }
 }
 
@@ -35,30 +36,52 @@
   border: 50px;
   width: 30px;
   height: 30px;
+  padding: 0px;
 }
 
 // для описания стилей мобильного меню
 .buy-now__btn {
+  margin-left: 34px;
   min-width: 150px;
   height: 44px;
   background: #ffffff;
   border-radius: 22px;
   @include font(700, 16px, 21px, 0.05em);
   @include flex-center;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   color: #d41443;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: #d41443;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+    }
+  }
 }
 
 .mobile-menu__link {
+  padding-left: 34px;
   @include font(700, 14px, 18px, 0.03em);
   color: #fff;
 
-  &::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    border-top: 1px solid #e18298;
+  &:hover,
+  &:focus {
+    color: #d41443;
   }
+}
+
+.mobile-menu__item-dash {
+  border-top: 1px solid #e18298;
+  padding: 12px 0px 12px;
+  width: 200%;
+}
+
+.mobile-menu__item-dash_bottom {
+  border-bottom: 1px solid #e18298;
+  margin-right: 35px;
+  width: 200%;
 }
