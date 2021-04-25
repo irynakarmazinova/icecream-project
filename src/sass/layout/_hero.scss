@@ -3,13 +3,16 @@
   padding-top: 193px;
   padding-bottom: 160px;
   overflow: hidden;
+  
   @media screen and (min-width: 768px) {
     padding: 102px 0 173px;
   }
+  
   @media screen and (min-width: 1280px) {
     padding: 171px 0 292px;
   }
 }
+
 .hero .container {
   position: relative;
 }
@@ -30,10 +33,10 @@
     color: $secondary-color;
     margin-bottom: 20px;
   }
+  
   @media screen and (min-width: 1280px) {
     min-width: 277px;
     @include font(400, 38px, 44px, 0.04em);
-
     margin-bottom: 25px;
   }
 }
@@ -43,9 +46,11 @@
   text-transform: uppercase;
 
   color: $primary-color;
+  
   @media screen and (min-width: 768px) {
     @include font(400, 34px, 31px, 0.04em);
   }
+  
   @media screen and (min-width: 1280px) {
     @include font(400, 58px, 52px, 0.04em);
   }
@@ -174,7 +179,7 @@
       transform: translate3d(7px, 0, 0);
     }
   }
-
+  
   @media screen and (min-width: 768px) {
     width: 143px;
     height: 336px;
@@ -213,8 +218,7 @@
       transform: translateX(0);
     }
   }
-}
-   
+}   
 
   @media screen and (min-width: 1280px) {
     width: 188px;
@@ -245,7 +249,7 @@
       transform: translateX(0);
     }
   }
-
+  }
 
   @media screen and (min-width: 1280px) {
     width: 293px;
