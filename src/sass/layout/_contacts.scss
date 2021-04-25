@@ -30,7 +30,7 @@
 }
 
 .city {
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid $band-color;
   padding-bottom: 25px;
 
   &__name {
@@ -181,11 +181,16 @@
     padding-top: 66px;
     padding-bottom: 82px;
 
-    background-image: url('/images/desktop/contacts/contacts-background.png'),
+    background-image: url('/images/desktop/contacts/contacts-background@1x.png'),
       linear-gradient(to bottom, $secondary-color 23%, $primary-bgcolor 10%);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 45%;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('/images/desktop/contacts/contacts-background@2x.png'),
+        linear-gradient(to bottom, $secondary-color 23%, $primary-bgcolor 10%);
+    }
   }
 
   .contacts-list {

@@ -1,15 +1,15 @@
 .products {
   padding-top: 121px;
   padding-bottom: 98px;
-  
+
   @media screen and (min-width: 768px) {
-   padding-top: 122px;
-  padding-bottom: 112px;
+    padding-top: 122px;
+    padding-bottom: 112px;
   }
 
   @media screen and (min-width: 1280px) {
-  padding-top: 127px;
-  padding-bottom: 119px;
+    padding-top: 127px;
+    padding-bottom: 119px;
   }
 }
 
@@ -36,12 +36,15 @@
 .products__social_item {
   position: relative;
   border-radius: 24px;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
+  // border: 1px solid #eeeeee;
+  border: 1px solid transparent;
 
-  &:not(:last-child) {
-    margin-bottom: 129px;
+  @media screen and(max-width:767px) {
+    &:not(:last-child) {
+      margin-bottom: 130px;
+    }
   }
+
   &:before {
     content: '. . .';
     position: absolute;
@@ -58,16 +61,13 @@
     align-content: flex-start;
     width: 220px;
 
-    &:not(:last-child) {
-      margin-top: unset;
-      margin-bottom: unset;
-    }
-
     &:before {
       top: 195px;
     }
   }
   @media screen and (min-width: 1280px) {
+    flex-basis: calc(100% / 3 - 24px);
+    margin-left: 24px;
     &:before {
       top: 215px;
     }
@@ -88,11 +88,26 @@
 
 .products__img {
   position: absolute;
-  bottom: 70%;
-  left: 0;
+  // bottom: 70%;
+  // left: 0;
+
+  bottom: 71%;
+  left: 15px;
+  width: 249px;
+  height: 252px;
 
   @media screen and (min-width: 768px) {
+    bottom: 76%;
+    left: 0%;
+    width: 220px;
+    height: 226px;
+  }
+
+  @media screen and (min-width: 1280px) {
     bottom: 80%;
+    left: 6%;
+    width: 335px;
+    height: 335px;
   }
 }
 
@@ -141,33 +156,34 @@
   }
 }
 
+// круглая белая кнопка
 .products__btn {
   position: absolute;
   width: 40px;
   height: 40px;
-   right: 43%;
+  right: 43%;
   bottom: 41px;
- 
-   border-radius: 50%;
-   border: transparent;
-   fill: $primary-color;
+
+  border-radius: 50%;
+  border: transparent;
+  fill: $primary-color;
   background-color: $secondary-color;
 
   transition: background-color 250ms linear, fill 250ms linear;
 
-&:hover,
+  &:hover,
   &:focus {
     fill: $secondary-color;
     background-color: $primary-color;
   }
-  
+
   @media screen and (min-width: 768px) {
     right: 41%;
   }
 
   @media screen and (min-width: 1280px) {
     bottom: 50px;
-    right: 43%;
+    right: 45%;
   }
 }
 

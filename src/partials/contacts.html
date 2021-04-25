@@ -1,7 +1,7 @@
 
-<section class="contacts-section">    
+<section id="contact" class="contacts-section">    
     <div class="container">
-        <article id="contact"><h2 class="visually-hidden">Contacts</h2></article>
+        <h2 class="visually-hidden">Contacts</h2>
 
 
     <ul class="contacts-list list">
@@ -77,26 +77,41 @@
                 <use href="./images/sprite/sprite.svg#icon-arrow-right"></use>
             </svg>
         </button>
-        <button type="button" class="btn-light contacts-light-btn">Franchise
+        <button type="button" class="btn-light contacts-light-btn" data-modal-open2>Franchise
             <svg class="icon-arrow-right">
                 <use href="./images/sprite/sprite.svg#icon-arrow-right"></use>
             </svg>
         </button>
     </div>
+
+        <!-- Модальное окно с картой-Our Locations -->
+    <div class="backdrop is-hidden" data-modal1>
+        <div class="modal-contacts">
+            <button class="modal__close-btn" type="button" data-modal-close1>
+                <svg class="modal__close-icon" width="32" height="32">
+                    <use href="images/sprite/sprite.svg#icon-close-btn"></use>
+                </svg>
+            </button>
+            <h3 class="modal-contacts--text">Our cafe is located at:</h3>
+            <iframe class="size-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1078.2838158560965!2d36.2299361562443!3d50.00000392922849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0e0d6d43929%3A0xbe1a7c9519f39cf1!2z0JrRgNC40YHRgtCw0LvQuw!5e0!3m2!1sru!2sua!4v1619355978337!5m2!1sru!2sua"
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!-- Модальное окно с картой-Franchise -->
+    <div class="backdrop is-hidden" data-modal2>
+        <div class="modal-contacts">
+            <button class="modal__close-btn" type="button" data-modal-close2>
+                <svg class="modal__close-icon" width="32" height="32">
+                    <use href="images/sprite/sprite.svg#icon-close-btn"></use>
+                </svg>
+            </button>
+            <h3 class="modal-contacts--text">The franchise office is located at:</h3>
+            <iframe class="size-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2566.0063680409985!2d36.255512515464616!3d49.9737391294801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a080bb9c3751%3A0xe7bb89aef6a0f7c0!2z0JHQuNC30L3QtdGBLdGG0LXQvdGC0YAgItCQ0YDQuNGB0YLQvtC60YDQsNGCIiwg0L_RgNC-0YHQvy4g0JPQsNCz0LDRgNC40L3QsCwgNDMvMiwg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1sru!2sua!4v1619392998946!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
 </section>
 
-<!-- Модальное окно с картой -->
-<div class="backdrop is-hidden" data-modal1>
-    <div class="modal-contacts">
-        <button class="modal__close-btn" type="button" data-modal-close1>
-            <svg class="modal__close-icon" width="32" height="32">
-                <use href="images/sprite/sprite.svg#icon-close-btn"></use>
-            </svg>
-        </button>
-        <h3 class="modal-contacts--text">Our cafe is located at:</h3>
-        <iframe class="size-map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1078.2838158560965!2d36.2299361562443!3d50.00000392922849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0e0d6d43929%3A0xbe1a7c9519f39cf1!2z0JrRgNC40YHRgtCw0LvQuw!5e0!3m2!1sru!2sua!4v1619355978337!5m2!1sru!2sua"
-            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-</div>
+
 

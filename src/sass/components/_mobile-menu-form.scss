@@ -1,13 +1,13 @@
 // для описания стилей мобильного меню
-// для описания стилей мобильного меню- основные стили, ис опен, бургер меню
 .mobile-menu {
   position: fixed;
+  z-index: 503;
   top: 0;
   right: 0;
-  width: 260px;
+  width: 250px;
   height: 100vh;
-  padding: 60px 20px;
-  background-color: #e17992;
+  padding: 60px 21px;
+  background-color: $mobile-bgcolor;
   transform: translateX(100%);
   transition: transform 250ms linear;
   display: flex;
@@ -17,8 +17,7 @@
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
-    width: 40vw;
-    padding: 60px 34px 60px 0px;
+    width: 35vw;
   }
 }
 
@@ -28,60 +27,36 @@
   }
 }
 
-.mobile-menu__close-btn {
-  background-color: transparent;
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  border: 50px;
-  width: 30px;
-  height: 30px;
-  padding: 0px;
-}
-
 // для описания стилей мобильного меню
-.buy-now__btn {
-  margin-left: 34px;
-  min-width: 150px;
-  height: 44px;
-  background: #ffffff;
-  border-radius: 22px;
-  @include font(700, 16px, 21px, 0.05em);
-  @include flex-center;
-  margin-bottom: 32px;
-  color: #d41443;
-  border: none;
+.buy-now__btn-mobile {
+  padding: 11px 49px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  @include font(700, 16px, 21px, 0em);
 
-  &:hover,
-  &:focus {
-    background-color: #d41443;
-
-    &:hover,
-    &:focus {
-      color: #ffffff;
-    }
+  @media screen and (min-width: 768px) {
+    padding: 11px 43px;
   }
 }
 
 .mobile-menu__link {
-  padding-left: 34px;
-  @include font(700, 14px, 18px, 0.03em);
-  color: #fff;
+  @include font(700, 14px, 18px, 0em);
+  color: $secondary-color;
 
   &:hover,
   &:focus {
-    color: #d41443;
+    color: $primary-color;
   }
 }
 
 .mobile-menu__item-dash {
-  border-top: 1px solid #e18298;
+  border-top: 1px solid $dash-mobmenu-color;
   padding: 12px 0px 12px;
   width: 200%;
 }
 
 .mobile-menu__item-dash_bottom {
-  border-bottom: 1px solid #e18298;
+  border-bottom: 1px solid $dash-mobmenu-color;
   margin-right: 35px;
   width: 200%;
 }

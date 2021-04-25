@@ -21,7 +21,7 @@
 }
 
 .modal__close-btn {
-@include flex-center;
+  @include flex-center;
   cursor: pointer;
 
   position: absolute;
@@ -35,7 +35,7 @@
 }
 
 .modal__close-icon {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms linear;
 
   .modal__close-btn:hover &,
   .modal__close-btn:focus & {
