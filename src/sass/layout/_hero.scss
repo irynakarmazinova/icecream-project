@@ -37,6 +37,7 @@
     margin-bottom: 25px;
   }
 }
+
 .hero__span {
   @include font(400, 48px, 46px, 0.04em);
   text-transform: uppercase;
@@ -49,6 +50,7 @@
     @include font(400, 58px, 52px, 0.04em);
   }
 }
+
 .hero__list {
   display: flex;
   align-items: center;
@@ -56,6 +58,7 @@
 
 .hero__item:not(:last-child) {
   margin-right: 8px;
+  
   @media screen and (min-width: 1280px) {
     margin-right: 15px;
   }
@@ -64,17 +67,16 @@
 .hero__link {
   position: sticky;
   z-index: 50;
-
-  font-family: $primary-font;
-  @include font(400, 8px, 10px, 0em);
-
-  display: inline-flex;
+   display: inline-flex;
   align-items: center;
   text-align: center;
   padding: 7px 14px;
    border-radius: 20px;
 
-  transition: color 250ms linear, background-color 250ms linear;
+  font-family: $primary-font;
+  @include font(400, 8px, 10px, 0em);
+
+   transition: color 250ms linear, background-color 250ms linear;
  
   @media screen and (min-width: 1280px) {
     @include font(400, 14px, 18px, 0em);
@@ -112,14 +114,17 @@
   left: 42px;
   width: 346px;
   height: 344px;
-  background-color: $suptitle-color;
   border-radius: 50%;
+  
+  background-color: $suptitle-color;
+    
   @media screen and (min-width: 768px) {
     top: -71px;
     left: 307px;
     width: 324px;
     height: 322px;
   }
+  
   @media screen and (min-width: 1280px) {
     top: -119px;
     left: 475px;
@@ -127,6 +132,7 @@
     height: 538px;
   }
 }
+
 .hero__img_main {
   position: absolute;
   bottom: -160px;
@@ -134,12 +140,14 @@
   z-index: 25;
   width: 171px;
   height: 410px;
+  
   @media screen and (min-width: 768px) {
     width: 143px;
     height: 336px;
     bottom: -173px;
     right: 247px;
   }
+  
   @media screen and (min-width: 1280px) {
     width: 236px;
     height: 557px;
@@ -147,17 +155,21 @@
     right: 450px;
   }
 }
+
 .hero__img_left {
   @media screen and (max-width: 767px) {
     display: none;
   }
 
+  @media screen and (min-width: 768px) { 
   position: absolute;
   width: 124px;
   height: 126px;
   bottom: -145px;
   left: 34px;
   z-index: 11;
+  }
+   
   @media screen and (min-width: 1280px) {
     width: 188px;
     height: 191px;
@@ -165,16 +177,19 @@
     left: 77px;
   }
 }
+
 .hero__img_right {
   @media screen and (max-width: 767px) {
     display: none;
   }
-
+@media screen and (min-width: 768px) {
   position: absolute;
   width: 168px;
   height: 133px;
   bottom: -173px;
   right: 34px;
+  }
+    
   @media screen and (min-width: 1280px) {
     width: 293px;
     height: 232px;
@@ -182,89 +197,6 @@
     right: 109px;
   }
 }
-
-.hero-avantages {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
-    position: absolute;
-    right: 42px;
-    top: 12px;
-  }
-  @media screen and (min-width: 1280px) {
-    top: 15px;
-    right: 120px;
-  }
-}
-.hero-avantages__item:not(:last-child) {
-  margin-bottom: 14px;
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 18px;
-  }
-}
-.hero__text {
-  position: sticky;
-  top: 0;
-  right: 44px;
-  font-family: $acent-font;
-  @include font(400, 28px, 32px, 0.04em);
-  text-transform: uppercase;
-  color: $primary-color;
-  z-index: 500;
-  @media screen and (min-width: 1280px) {
-    @include font(400, 46px, 53px, 0.04em);
-
-    margin-bottom: 2px;
-  }
-}
-.hero__suptext {
-  @include font(400, 8px, 10px, 0em);
-
-  text-align: right;
-
-  color: $secondary-color;
-  @media screen and (min-width: 1280px) {
-    @include font(400, 14px, 18px, 0em);
-  }
-}
-.mini-circle {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    right: 34px;
-    top: 8px;
-    @media screen and (min-width: 1280px) {
-      top: 11px;
-      right: 102px;
-    }
-  }
-}
-.mini-circle__item:not(:last-child) {
-  margin-bottom: 41px;
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 62px;
-  }
-}
-.mini-circle__wrapper {
-  @media screen and (min-width: 768px) {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: $secondary-color;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 30px;
-    height: 30px;
-  }
-}
-
 
 .hero__overlay {
   @media screen and (max-width: 767px) {
@@ -280,12 +212,14 @@
     left: 295px;
   }
 }
+
 .hero__overlay_text {
   @include flex-center;
   @include font(400, 8px, 12px, 0.04em);
   color: $secondary-color;
   width: 114px;
   margin-bottom: 7px;
+  
   @media screen and (min-width: 1280px) {
     @include font(400, 14px, 20px, 0.04em);
     width: 200px;
@@ -295,11 +229,11 @@
 // круглая светлая кнопка
 .hero__overlay_btn {
   @include flex-center;
-   width: 26px;
+  width: 26px;
   height: 26px;
   padding: 0;
   margin: 0;
-    border-radius: 50%;
+  border-radius: 50%;
   border: transparent;
 
   fill: $primary-color;
@@ -313,4 +247,114 @@
     background-color: $primary-color;
   }
 }
+
+.mini-circle {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    right: 34px;
+    top: 8px;
+  }
+  
+    @media screen and (min-width: 1280px) {
+      top: 11px;
+      right: 102px;
+    }
+}
+
+.mini-circle__item:not(:last-child) {
+  margin-bottom: 41px;
+  
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 62px;
+  }
+}
+
+.mini-circle__wrapper {
+  @media screen and (min-width: 768px) {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $secondary-color;
+  }
+  
+  @media screen and (min-width: 1280px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.hero-avantages {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    position: absolute;
+    right: 42px;
+    top: 12px;
+  }
+  
+  @media screen and (min-width: 1280px) {
+    top: 15px;
+    right: 120px;
+  }
+}
+
+.hero-avantages__item:not(:last-child) {
+  margin-bottom: 14px;
+  
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 18px;
+  }
+}
+
+.hero__text {
+  position: sticky;
+  z-index: 500;
+  top: 0;
+  right: 44px;
+  
+  font-family: $acent-font;
+  @include font(400, 28px, 32px, 0.04em);
+  text-transform: uppercase;
+  
+  color: $primary-color;
+  
+    @media screen and (min-width: 1280px) {
+    @include font(400, 46px, 53px, 0.04em);
+    margin-bottom: 2px;
+  }
+}
+
+.hero__suptext {
+  @include font(400, 8px, 10px, 0em);
+  text-align: right;
+
+  color: $secondary-color;
+  
+  @media screen and (min-width: 1280px) {
+    @include font(400, 14px, 18px, 0em);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
