@@ -33,15 +33,13 @@
 }*/
 
 .advantages__list {
-    /*margin-left: auto;
-    margin-right: auto;*/
+    
     @media screen and (max-width: 320px) {
         max-width: 450px;
     }
 
     @media screen and (min-width: 768px) {
         display: flex;
-        /*flex-wrap: wrap;*/
         justify-content: center;
     }
 
@@ -69,7 +67,6 @@
 }
 
 .advantages__img {
-   @mixin flex-start {}
     /*display: flex;
     justify-content: flex-start;
     align-items: center;*/
@@ -103,11 +100,7 @@
     font-family: $acent-font;
     color: $primary-color;
     @include font(400, 48px, 55px, 0.04em);
-    /*font-weight: normal;
-    font-size: 48px;
-    line-height: 55px;
-    letter-spacing: 0.04em;*/
-
+    
     &-bottom {
         margin-bottom: 10px;
     }
@@ -115,9 +108,6 @@
     @media screen and (min-width: 768px) {
         color: $primary-color;
         @include font(400, 38px, 42px, 0.04em);
-        /*font-size: 38px;
-        line-height: 42px;
-        letter-spacing: 0.04em;*/
         text-align: left;
     }
 }
@@ -125,28 +115,17 @@
 .advantages__text {
     font-family: $primary-font;
     color: $dark-color;
-    font-weight: bold;
-  @include font(700, 12px, 20px, 0.02em);
-        /*font-size: 12px;
-        line-height: 170%;
-        /* or 20px */
-        /*letter-spacing: 0.02em;*/
-        margin-right: 15px;
+ @include font(700, 12px, 20px, 0em); 
+        width: 230px;   
 
     @media screen and (min-width: 768px) {
-        @include font(700, 14px, 24px, 0.02em);
-        /*font-size: 14px;
-        line-height: 174%;
-        /* or 24px */
-        /*letter-spacing: 0.02em;*/
+        @include font(700, 14px, 24px, 0em);
+        width: 180px;
         margin-right: 15px;
     }
 
     @media screen and (min-width: 1280px) {
-        @include font(700, 16px, 28px, 0.02em);
-        /*font-size: 16px;
-        line-height: 176%;
-        /* or 28px */
-        /*letter-spacing: 0.02em;*/
+        @include font(700, 16px, 28px, 0em);
+        width: 330px;
     }
 }

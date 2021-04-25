@@ -1441,11 +1441,6 @@ button {
         padding-bottom: 49px;
     }
 }*/
-.advantages__list {
-  /*margin-left: auto;
-    margin-right: auto;*/
-}
-
 @media screen and (max-width: 320px) {
   .advantages__list {
     max-width: 450px;
@@ -1457,7 +1452,6 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /*flex-wrap: wrap;*/
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1544,10 +1538,6 @@ button {
   font-size: 48px;
   line-height: 1.15;
   letter-spacing: 0.04em;
-  /*font-weight: normal;
-    font-size: 48px;
-    line-height: 55px;
-    letter-spacing: 0.04em;*/
 }
 
 .advantages__title-bottom {
@@ -1561,9 +1551,6 @@ button {
     font-size: 38px;
     line-height: 1.11;
     letter-spacing: 0.04em;
-    /*font-size: 38px;
-        line-height: 42px;
-        letter-spacing: 0.04em;*/
     text-align: left;
   }
 }
@@ -1579,12 +1566,8 @@ button {
     font-weight: 700;
     font-size: 12px;
     line-height: 1.67;
-    letter-spacing: 0.02em;
-    /*font-size: 12px;
-        line-height: 170%;
-        /* or 20px */
-    /*letter-spacing: 0.02em;*/
-    margin-right: 15px;
+    letter-spacing: 0em;
+    width: 230px;
   }
 }
 
@@ -1593,11 +1576,8 @@ button {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.02em;
-    /*font-size: 14px;
-        line-height: 174%;
-        /* or 24px */
-    /*letter-spacing: 0.02em;*/
+    letter-spacing: 0em;
+    width: 180px;
     margin-right: 15px;
   }
 }
@@ -1607,11 +1587,8 @@ button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.75;
-    letter-spacing: 0.02em;
-    /*font-size: 16px;
-        line-height: 176%;
-        /* or 28px */
-    /*letter-spacing: 0.02em;*/
+    letter-spacing: 0em;
+    width: 330px;
   }
 }
 
