@@ -1,6 +1,16 @@
 .products {
-  padding-top: 60px;
-  padding-bottom: 49px;
+  padding-top: 121px;
+  padding-bottom: 98px;
+  
+  @media screen and (min-width: 768px) {
+   padding-top: 122px;
+  padding-bottom: 112px;
+  }
+
+  @media screen and (min-width: 1280px) {
+  padding-top: 127px;
+  padding-bottom: 119px;
+  }
 }
 
 .products .container {
@@ -135,12 +145,22 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  border: none;
-  background-color: $secondary-color;
-  right: 43%;
+   right: 43%;
   bottom: 41px;
+ 
+   border-radius: 50%;
+   border: transparent;
+   fill: $primary-color;
+  background-color: $secondary-color;
 
+  transition: background-color 250ms linear, fill 250ms linear;
+
+&:hover,
+  &:focus {
+    fill: $secondary-color;
+    background-color: $primary-color;
+  }
+  
   @media screen and (min-width: 768px) {
     right: 41%;
   }
@@ -154,5 +174,4 @@
 .products__btn_icon {
   width: 10px;
   height: 10px;
-  fill: $primary-color;
 }
