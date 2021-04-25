@@ -16,7 +16,20 @@
 //   });
 
 
-$('.grid').masonry({
+// $('.grid').masonry({
+//     itemSelector: '.grid-item',
+//     gutter: 4,
+// });
+
+var $grid = $('.grid').masonry({
     itemSelector: '.grid-item',
-    gutter: 4,
+    gutter: 4
+//   columnWidth: 160
+});
+
+$grid.on( 'click', '.grid-item', function() {
+  // change size of item via class
+  $( this ).toggleClass('grid-item--gigante');
+  // trigger layout
+  $grid.masonry();
 });
