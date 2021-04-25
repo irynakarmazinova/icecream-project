@@ -1,8 +1,11 @@
-.header {
-  padding-top: 6px;
+.header__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+  background-color: #ffb8ca;
+  width: 100%;
 }
 
 .icon-burger {
@@ -31,9 +34,19 @@
   flex-direction: column;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
+  .header__container {
+    padding-top: 6px;
+  }
+
+  .buy-now__btn-tablet {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
   .mobile-menu {
-    width: 250;
+    width: 250px;
   }
 
   .buy-now__btn {
@@ -41,15 +54,54 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .mobile-menu {
-    width: 30vw;
+    width: 40vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    padding-top: 34px;
+  }
+
+  .mobile-menu {
+    width: 40vw;
     padding: 60px 34px;
   }
 
   .buy-now__btn {
     min-width: 160px;
+    max-width: 250px;
   }
+
+  .buy-now__btn-tablet {
+    min-width: 160px;
+    height: 44px;
+    background: #ffffff;
+    border-radius: 22px;
+    @include font(700, 16px, 21px, 0.05em);
+    @include flex-center;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .burger-btn {
+    display: none;
+  }
+
+  .buy-now__btn-tablet {
+    margin-left: 0px;
+  }
+}
+
+.header__menu_btn {
+  @include flex-center;
 }
 
 .is-open {
@@ -77,11 +129,11 @@
   margin-bottom: 20px;
 }
 
-.navigation__item {
-  margin-bottom: 22px;
-}
+// .navigation__item {
+//   padding-bottom: 22px;
+// }
 
-.navigation__link {
+.mobile-menu__link {
   @include font(700, 14px, 18px, 0.03em);
   color: #fff;
 
@@ -92,4 +144,19 @@
     width: 100%;
     border-top: 1px solid #e18298;
   }
+}
+
+.navigation__list {
+  display: flex;
+  margin: 0px 110px;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.navigation__link {
+  @include font(700, 16px, 21px, 0.03em);
+  color: #fff;
+  z-index: 2;
 }
