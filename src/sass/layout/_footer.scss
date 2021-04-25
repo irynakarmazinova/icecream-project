@@ -1,3 +1,161 @@
+.products {
+  padding-top: 60px;
+  padding-bottom: 49px;
+}
+
+.products .container {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.products__social_list {
+  margin-top: 144px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-top: 157px;
+    margin-left: -20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 259px;
+  }
+}
+
+.products__social_item {
+  position: relative;
+  border-radius: 24px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+
+  &:not(:last-child) {
+    margin-bottom: 129px;
+  }
+  &:before {
+    content: '. . .';
+    position: absolute;
+    left: 45%;
+    top: 205px;
+    font-family: $acent-font;
+    @include font(400, 20px, 23px, 0.04em);
+    color: $secondary-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 20px);
+    margin-left: 20px;
+    align-content: flex-start;
+    width: 220px;
+
+    &:not(:last-child) {
+      margin-top: unset;
+      margin-bottom: unset;
+    }
+
+    &:before {
+      top: 195px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &:before {
+      top: 215px;
+    }
+  }
+}
+
+.ice_cream {
+  background-color: #ffb8ca;
+}
+
+.ice_coffee {
+  background-color: #f0d1a5;
+}
+
+.milkshakes {
+  background-color: #c2e297;
+}
+
+.products__img {
+  position: absolute;
+  bottom: 70%;
+  left: 0;
+
+  @media screen and (min-width: 768px) {
+    bottom: 80%;
+  }
+}
+
+.products__social_title {
+  font-family: $acent-font;
+  @include font(400, 20px, 23px, 0.04em);
+  text-transform: uppercase;
+
+  color: $secondary-color;
+  margin-bottom: 66px;
+  margin-top: 161px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 152px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(400, 30px, 34px, 0.04em);
+    margin-top: 163px;
+  }
+}
+
+.products__social_text {
+  display: inline-block;
+  font-family: $primary-font;
+  @include font(700, 14px, 21px, 0.04em);
+
+  color: $secondary-color;
+
+  margin-bottom: 111px;
+  width: 200px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    @include font(700, 14px, 25px, 0.04em);
+    margin-bottom: 120px;
+    width: 198px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(700, 16px, 28px, 0.04em);
+    margin-bottom: 152px;
+    width: 241px;
+  }
+}
+
+.products__btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: $secondary-color;
+  right: 43%;
+  bottom: 41px;
+
+  @media screen and (min-width: 768px) {
+    right: 41%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: 50px;
+    right: 43%;
+  }
+}
+
+.products__btn_icon {
+  width: 10px;
+  height: 10px;
+  fill: $primary-color;
+}
 .footer {
   padding-top: 56px;
   padding-bottom: 25px;
@@ -38,46 +196,6 @@
     width: unset;
   }
 }
-
-// .footer__name_first {
-//   width: 232px;
-//   font-family: $acent-font;
-//   @include font(400, 18px, 21px, 0em);
-//   text-transform: uppercase;
-
-//   color: $suptitle-color;
-
-//   margin-bottom: 17px;
-
-//   @media screen and (min-width: 768px) {
-//     width: 340px;
-//     @include font(400, 26px, 30px, 0.04em);
-//   }
-
-//   @media screen and (min-width: 1280px) {
-//     width: 472px;
-//     @include font(400, 30px, 34px, 0.04em);
-//   }
-// }
-
-// .footer__name_second {
-//   width: 230px;
-//   font-family: $acent-font;
-//   @include font(400, 34px, 39px, 0.04em);
-//   text-transform: uppercase;
-
-//   color: $primary-color;
-
-//   @media screen and (min-width: 768px) {
-//     width: 340px;
-//     @include font(400, 48px, 55px, 0.06em);
-//   }
-
-//   @media screen and (min-width: 1280px) {
-//     width: 477px;
-//     @include font(400, 58px, 66px, 0.06em);
-//   }
-// }
 
 .footer__social_list {
   display: flex;
@@ -151,11 +269,11 @@
   @include font(500, 12px, 22px, 0em);
   color: $primary-color;
   font-style: normal;
-  
+
   &:hover,
-    &:focus {
-    color:$suptitle-color;
-    }
+  &:focus {
+    color: $suptitle-color;
+  }
 
   @media screen and (min-width: 768px) {
     @include font(500, 14px, 26px, 0em);
