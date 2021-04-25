@@ -1,11 +1,8 @@
 .advantages {
     position: relative;
     background-color: $primary-bgcolor;
-
-    @media screen and (min-width: 320px) {
-        padding-top: 20px;
+      padding-top: 20px;
         padding-bottom: 48px;
-    }
 
     @media screen and (min-width: 768px) {
         padding-top: 33px;
@@ -55,11 +52,9 @@
 }
 
 .advantages__items {
-    @media screen and (min-width: 320px) {
-        max-width: 450px;
+  max-width: 450px;
         justify-items: center;
         margin-bottom: 35px;
-    }
 
     @media screen and (min-width: 768px) {
         width: calc((100% - 60px) / 3);
@@ -78,10 +73,7 @@
     /*display: flex;
     justify-content: flex-start;
     align-items: center;*/
-
-    @media screen and (min-width: 320px) {
-        padding-bottom: 16px;
-    }
+  padding-bottom: 16px;
 
     @media screen and (min-width: 768px) {
         padding-bottom: 36px;
@@ -134,15 +126,12 @@
     font-family: $primary-font;
     color: $dark-color;
     font-weight: bold;
-    
-    @media screen and (min-width: 320px) {
-        @include font(700, 12px, 20px, 0.02em);
+  @include font(700, 12px, 20px, 0.02em);
         /*font-size: 12px;
         line-height: 170%;
         /* or 20px */
         /*letter-spacing: 0.02em;*/
         margin-right: 15px;
-    }
 
     @media screen and (min-width: 768px) {
         @include font(700, 14px, 24px, 0.02em);
