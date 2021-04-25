@@ -14,3 +14,40 @@
     padding-bottom: 61px;
   }
 }
+
+.grid {
+  margin: 0 auto;
+  position: relative;
+  // max-width: 280px;
+  width: 280px;
+  height: 122px;
+  display: grid;
+  // grid-gap: 10px;
+  grid-auto-flow: dense;
+
+  @media screen and(min-width:768px) {
+    // max-width: 620px;
+    width: 620px;
+    height: 264px;
+  }
+
+  @media screen and(min-width:1280px) {
+    // max-width: 1050px;
+    width: 1050px;
+    height: 430px;
+  }
+}
+
+// .grid-sizer {
+//   width: 4px;
+// }
+
+.grid-item {
+  float: left;
+  width: 36px;
+  margin-bottom: 5px;
+}
+
+.grid-item-big {
+  width: 72px;
+}
