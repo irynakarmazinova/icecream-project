@@ -271,7 +271,7 @@
   background-color: $secondary-color;
   width: 26px;
   height: 26px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear;
   &:hover,
   &:focus {
     background-color: $primary-color;
@@ -305,7 +305,7 @@
 }
 .hero__overlay_icon {
   fill: $primary-color;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms linear;
   &:hover,
   &:focus {
     fill: $secondary-color;
