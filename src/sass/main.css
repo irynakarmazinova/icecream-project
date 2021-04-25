@@ -128,7 +128,10 @@ button {
           justify-content: center;
   padding: 0;
   background-color: transparent;
+/*   color: #ffa5ba; */
+
   fill: #ffffff;
+
   cursor: pointer;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -141,6 +144,8 @@ button {
 .close-btn__modal {
   top: 8px;
   right: 8px;
+/*   border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1); */
   border: transparent;
 }
 
@@ -232,7 +237,10 @@ button {
   left: 0;
   width: 100vw;
   height: 100vh;
+
+/*   background-color: rgba(255, 165, 186, 0.496); */
   background-color: rgba(255, 184, 202, 0.149);
+
   overflow-y: scroll;
   opacity: 1;
   visibility: visible;
@@ -248,10 +256,16 @@ button {
 .modal {
   position: absolute;
   z-index: 2;
+/*   min-width: 220px;
+  min-height: 485px;
+  padding: 40px;
+  background-color: #ffffff; */
+
   width: 260px;
   height: 400px;
   padding: 44px;
   background-color: #ffb8ca;
+
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -263,6 +277,19 @@ button {
   transition: -webkit-transform 400ms linear;
   transition: transform 400ms linear;
   transition: transform 400ms linear, -webkit-transform 400ms linear;
+}
+
+/* @media screen and (max-width: 479px) {
+  .modal {
+    min-width: 320px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  } */
   overflow-y: scroll;
 }
 
@@ -283,14 +310,27 @@ button {
   text-align: center;
   font-family: "Titan One", cursive;
   font-weight: 400;
+
+/*   font-size: 22px;
+  line-height: 1;
+  letter-spacing: 0.02em; */
   font-size: 30px;
   line-height: 1.13;
   letter-spacing: 0.04em;
+
   text-transform: uppercase;
   color: #d41443;
 }
 
 .modal__description {
+/*   font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffa5ba; */
+
   margin-bottom: 40px;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
@@ -309,6 +349,7 @@ button {
   letter-spacing: 0em;
   color: #907e82;
   text-align: center;
+
 }
 
 .header {
@@ -970,6 +1011,219 @@ button {
 @media screen and (min-width: 1280px) {
   .milk-image-box {
     bottom: -80px;
+  }
+}
+
+.advantages {
+  position: relative;
+  background-color: #fff5f6;
+}
+
+@media screen and (min-width: 320px) {
+  .advantages {
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-top: 33px;
+    padding-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages {
+    padding-top: 20px;
+    padding-bottom: 49px;
+  }
+}
+
+/*.advantages__container {
+        
+    @media screen and (min-width: 320px) {
+        padding-top: 20px;
+        padding-bottom: 70px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 33px;
+        padding-bottom: 70px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding-top: 20px;
+        padding-bottom: 49px;
+    }
+}*/
+.advantages__list {
+  /*margin-left: auto;
+    margin-right: auto;*/
+}
+
+@media screen and (max-width: 320px) {
+  .advantages__list {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .advantages__items {
+    max-width: 450px;
+    justify-items: center;
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__items {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages__items {
+    width: calc((100% - 120px) / 3);
+  }
+  .advantages__items:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.advantages__img {
+  /*display: flex;
+    justify-content: flex-start;
+    align-items: center;*/
+}
+
+@media screen and (min-width: 320px) {
+  .advantages__img {
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__img {
+    padding-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages__img {
+    padding-bottom: 36px;
+  }
+}
+
+.advantages__icon {
+  width: 33px;
+  height: 50px;
+}
+
+.advantages__icon-one {
+  width: 50px;
+  height: 50px;
+}
+
+.advantages__icon-two {
+  width: 44px;
+  height: 50px;
+}
+
+.advantages__title {
+  font-family: "Titan One", cursive;
+  color: #d41443;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  /*font-weight: normal;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.04em;*/
+}
+
+.advantages__title--bottom {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__title {
+    color: #d41443;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.11;
+    letter-spacing: 0.04em;
+    /*font-size: 38px;
+        line-height: 42px;
+        letter-spacing: 0.04em;*/
+    text-align: left;
+  }
+}
+
+.advantages__text {
+  font-family: "DM Sans", sans-serif;
+  color: #000000;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 320px) {
+  .advantages__text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 2.83;
+    letter-spacing: 0.02em;
+    /*font-size: 12px;
+        line-height: 170%;
+        letter-spacing: 0.02em;*/
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 3;
+    letter-spacing: 0.02em;
+    /*font-size: 14px;
+        line-height: 174%;
+        letter-spacing: 0.02em;*/
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 3.06;
+    letter-spacing: 0.02em;
+    /*font-size: 16px;
+        line-height: 176%;
+        letter-spacing: 0.02em;*/
   }
 }
 

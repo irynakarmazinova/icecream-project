@@ -6,6 +6,12 @@
   align-items: center;
 }
 
+@mixin flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 // миксин для шрифтов, например- @include font(400, 18px, 28px, 0.03em);
 @mixin font($fw, $fs, $lh, $ls) {
   font-weight: $fw;
