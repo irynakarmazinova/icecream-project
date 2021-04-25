@@ -73,11 +73,11 @@
     }
 }
 
-                      /*==не идут картинки=*/
 .advantages__img {
-    display: flex;
+   @mixin flex-start {}
+    /*display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center;*/
 
     @media screen and (min-width: 320px) {
         padding-bottom: 16px;
@@ -97,12 +97,12 @@
     height: 50px;
 }
 
-.advantages__icon1 {
+.advantages__icon-one {
     width: 50px;
     height: 50px;
 }
 
-.advantages__icon2 {
+.advantages__icon-two {
     width: 44px;
     height: 50px;
 }
