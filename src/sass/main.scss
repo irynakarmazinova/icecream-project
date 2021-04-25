@@ -11,12 +11,13 @@
 @import './components/suptitle';
 @import './components/animation';
 
-@import './components/mobile-menu';
+@import './components/backdrop';
+
 @import './components/mobile-menu-form';
 
-@import './components/backdrop';
-@import './components/modal';
 @import './components/modal-form';
+
+@import './components/modal-contacts-form';
 
 @import './layout/header';
 @import './layout/hero';
