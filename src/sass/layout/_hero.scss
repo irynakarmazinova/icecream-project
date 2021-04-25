@@ -3,11 +3,11 @@
   padding-top: 193px;
   padding-bottom: 160px;
   overflow: hidden;
-  
+
   @media screen and (min-width: 768px) {
     padding: 102px 0 173px;
   }
-  
+
   @media screen and (min-width: 1280px) {
     padding: 171px 0 292px;
   }
@@ -33,7 +33,7 @@
     color: $secondary-color;
     margin-bottom: 20px;
   }
-  
+
   @media screen and (min-width: 1280px) {
     min-width: 277px;
     @include font(400, 38px, 44px, 0.04em);
@@ -46,11 +46,11 @@
   text-transform: uppercase;
 
   color: $primary-color;
-  
+
   @media screen and (min-width: 768px) {
     @include font(400, 34px, 31px, 0.04em);
   }
-  
+
   @media screen and (min-width: 1280px) {
     @include font(400, 58px, 52px, 0.04em);
   }
@@ -63,7 +63,7 @@
 
 .hero__item:not(:last-child) {
   margin-right: 8px;
-  
+
   @media screen and (min-width: 1280px) {
     margin-right: 15px;
   }
@@ -72,17 +72,17 @@
 .hero__link {
   position: sticky;
   z-index: 50;
-   display: inline-flex;
+  display: inline-flex;
   align-items: center;
   text-align: center;
   padding: 7px 14px;
-   border-radius: 20px;
+  border-radius: 20px;
 
   font-family: $primary-font;
   @include font(400, 8px, 10px, 0em);
 
-   transition: color 250ms linear, background-color 250ms linear;
- 
+  transition: color 250ms linear, background-color 250ms linear;
+
   @media screen and (min-width: 1280px) {
     @include font(400, 14px, 18px, 0em);
     padding: 12px 21px;
@@ -91,10 +91,10 @@
 
 // для акцентной кнопки
 .hero__link_ligth {
-   color: $primary-color;
+  color: $primary-color;
   background-color: $secondary-color;
-  
-   &:hover,
+
+  &:hover,
   &:focus {
     color: $secondary-color;
     background: $primary-color;
@@ -103,10 +103,10 @@
 
 // для светлой кнопки
 .hero__link_acent {
-   color: $secondary-color;
+  color: $secondary-color;
   background-color: $primary-color;
-  
-   &:hover,
+
+  &:hover,
   &:focus {
     color: $primary-color;
     background: $secondary-color;
@@ -120,9 +120,9 @@
   width: 346px;
   height: 344px;
   border-radius: 50%;
- 
+
   background-color: $suptitle-color;
-  
+
   animation: animate_pulse 2s ease 1;
   @keyframes animate_pulse {
     0% {
@@ -142,7 +142,7 @@
     width: 324px;
     height: 322px;
   }
-  
+
   @media screen and (min-width: 1280px) {
     top: -119px;
     left: 475px;
@@ -179,14 +179,14 @@
       transform: translate3d(7px, 0, 0);
     }
   }
-  
+
   @media screen and (min-width: 768px) {
     width: 143px;
     height: 336px;
     bottom: -173px;
     right: 248px;
   }
-  
+
   @media screen and (min-width: 1280px) {
     width: 236px;
     height: 557px;
@@ -200,25 +200,25 @@
     display: none;
   }
 
-  @media screen and (min-width: 768px) { 
-  position: absolute;
-  width: 124px;
-  height: 126px;
-  bottom: -145px;
-  left: 34px;
-  z-index: 11;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    width: 124px;
+    height: 126px;
+    bottom: -145px;
+    left: 34px;
+    z-index: 11;
 
-  animation: mymoveleft 2s ease 1;
-  @keyframes mymoveleft {
-    0% {
-      transform: translateX(-100px);
-    }
+    animation: mymoveleft 2s ease 1;
+    @keyframes mymoveleft {
+      0% {
+        transform: translateX(-100px);
+      }
 
-    100% {
-      transform: translateX(0);
+      100% {
+        transform: translateX(0);
+      }
     }
   }
-}   
 
   @media screen and (min-width: 1280px) {
     width: 188px;
@@ -232,23 +232,23 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-@media screen and (min-width: 768px) {
-  position: absolute;
-  width: 168px;
-  height: 133px;
-  bottom: -173px;
-  right: 35px;
-  
-  animation: mymoveright 2s ease 1;
-  @keyframes mymoveright {
-    0% {
-      transform: translateX(100px);
-    }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    width: 168px;
+    height: 133px;
+    bottom: -173px;
+    right: 35px;
 
-    100% {
-      transform: translateX(0);
+    animation: mymoveright 2s ease 1;
+    @keyframes mymoveright {
+      0% {
+        transform: translateX(100px);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
     }
-  }
   }
 
   @media screen and (min-width: 1280px) {
@@ -273,12 +273,12 @@
     left: 295px;
   }
 }
-  
-  .hero__posistion {
+
+.hero__posistion {
   display: flex;
   flex-direction: column-reverse;
 }
-  
+
 // круглая светлая кнопка
 .hero__overlay_btn {
   @include flex-center;
@@ -291,69 +291,69 @@
 
   fill: $primary-color;
   background-color: $secondary-color;
- 
+
   transition: background-color 250ms linear, fill 250ms linear;
-  
-   @media screen and (min-width: 1280px) {
+
+  @media screen and (min-width: 1280px) {
     width: 26px;
     height: 26px;
   }
-  
+
   &:hover,
   &:focus {
-     fill: $secondary-color;
+    fill: $secondary-color;
     background-color: $primary-color;
   }
-  
-   &:hover + .hero__overlay_wrapper {
+
+  &:hover + .hero__overlay_wrapper,
+  &:focus + .hero__overlay_wrapper {
     opacity: 1;
     transform: translateX(0);
   }
-}  
+}
 
 .hero__overlay_wrapper {
   opacity: 0;
   transform: translateX(-100%);
-  transition: opacity 250ms linear,
-    transform 250ms linear;
+  transition: opacity 250ms linear, transform 250ms linear;
 }
-  
+
 .hero__overlay_text {
   @include font(400, 8px, 12px, 0.04em);
   width: 114px;
   margin-bottom: 7px;
-  
+
   color: $secondary-color;
-  
+
   transition: transform 250ms linear;
-  
+
   @media screen and (min-width: 1280px) {
     @include font(400, 14px, 20px, 0.04em);
     width: 200px;
     margin-bottom: 20px;
   }
 }
-  
+
 .mini-circle {
   @media screen and (max-width: 767px) {
     display: none;
   }
-  
+
   @media screen and (min-width: 768px) {
     position: absolute;
     right: 35px;
     top: 8px;
   }
-  
-    @media screen and (min-width: 1280px) {
-      top: 11px;
-      right: 102px;
-    }
+
+  @media screen and (min-width: 1280px) {
+    top: 11px;
+    right: 102px;
+  }
 }
 
 .mini-circle__item:not(:last-child) {
   margin-bottom: 41px;
-  
+
   @media screen and (min-width: 1280px) {
     margin-bottom: 62px;
   }
@@ -366,18 +366,18 @@
     border-radius: 50%;
     background-color: $secondary-color;
   }
-  
+
   @media screen and (min-width: 1280px) {
     width: 30px;
     height: 30px;
   }
 }
 
- .hero-avantages {
+.hero-avantages {
   @media screen and (max-width: 767px) {
     display: none;
   }
-  
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -387,7 +387,7 @@
     right: 42px;
     top: 12px;
   }
-  
+
   @media screen and (min-width: 1280px) {
     top: 15px;
     right: 120px;
@@ -396,13 +396,13 @@
 
 .hero-avantages__item:not(:last-child) {
   margin-bottom: 14px;
-  
+
   @media screen and (min-width: 1280px) {
     margin-bottom: 18px;
   }
 }
- 
-  .hero__text {
+
+.hero__text {
   position: sticky;
   top: 0;
   right: 45px;
@@ -411,18 +411,18 @@
   text-transform: uppercase;
   color: $primary-color;
   z-index: 500;
-  
+
   @media screen and (min-width: 1280px) {
     @include font(400, 46px, 53px, 0.04em);
   }
- }
-    
+}
+
 .hero__suptext {
   @include font(400, 8px, 10px, 0em);
   text-align: right;
 
   color: $secondary-color;
-  
+
   @media screen and (min-width: 1280px) {
     @include font(400, 14px, 18px, 0em);
   }
