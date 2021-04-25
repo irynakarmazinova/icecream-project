@@ -88,6 +88,7 @@
   }
 }
 
+// розовая кнопка
 .contacts-accent-btn {
   @media screen and(max-width:767px) {
     margin: 54px auto 10px auto;
@@ -102,6 +103,7 @@
   }
 }
 
+// белая кнопка
 .contacts-light-btn {
   @media screen and(max-width:767px) {
     margin: 0 auto;
@@ -111,11 +113,12 @@
   background-color: $secondary-color;
 }
 
+// стрелочка-иконка для розовой кнопки
 .btn-icon-accent {
   fill: $secondary-color;
   margin-left: 10px;
-  width: 17px;
-  height: 12px;
+  width: 15px;
+  height: 10px;
   transition: fill 250ms linear;
   .contacts-accent-btn:hover &,
   .contacts-accent-btn:focus & {
@@ -123,11 +126,12 @@
   }
 }
 
+// стрелочка-иконка для белой кнопки
 .btn-icon-main {
   fill: $primary-color;
   margin-left: 10px;
-  width: 17px;
-  height: 12px;
+  width: 15px;
+  height: 10px;
   transition: fill 250ms linear;
   .contacts-light-btn:hover &,
   .contacts-light-btn:focus & {
