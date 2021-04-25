@@ -1,12 +1,12 @@
 
 var $grid = $('.grid').masonry({
-    itemSelector: '.grid-item',
+    itemSelector: '.grid__item',
     gutter: 4
 });
 
-$grid.on( 'click', '.grid-item', function() {
+$grid.on( 'click', '.grid__item', function() {
   // change size of item via class
-  $( this ).toggleClass('grid-item--gigante');
+  $( this ).toggleClass('grid__item_gigante');
   // trigger layout
   $grid.masonry();
 });

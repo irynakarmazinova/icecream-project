@@ -30,7 +30,7 @@
   }
 }
 
-.grid-item {
+.grid__item {
   float: left;
   width: 36px;
   margin-bottom: 4px;
@@ -44,7 +44,7 @@
   }
 }
 
-.grid-item--gigante {
+.grid__item_gigante {
   width: 72px;
 
   @media screen and(min-width:768px) {
