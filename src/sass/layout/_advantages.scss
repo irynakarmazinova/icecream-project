@@ -1,11 +1,8 @@
 .advantages {
     position: relative;
     background-color: $primary-bgcolor;
-
-    @media screen and (min-width: 320px) {
-        padding-top: 20px;
-        padding-bottom: 70px;
-    }
+      padding-top: 20px;
+        padding-bottom: 48px;
 
     @media screen and (min-width: 768px) {
         padding-top: 33px;
@@ -13,7 +10,7 @@
     }
     @media screen and (min-width: 1280px) {
         padding-top: 20px;
-        padding-bottom: 49px;
+        padding-bottom: 70px;
     }
 
 }
@@ -36,15 +33,13 @@
 }*/
 
 .advantages__list {
-    /*margin-left: auto;
-    margin-right: auto;*/
+    
     @media screen and (max-width: 320px) {
         max-width: 450px;
     }
 
     @media screen and (min-width: 768px) {
         display: flex;
-        /*flex-wrap: wrap;*/
         justify-content: center;
     }
 
@@ -55,11 +50,9 @@
 }
 
 .advantages__items {
-    @media screen and (min-width: 320px) {
-        max-width: 450px;
+  max-width: 450px;
         justify-items: center;
         margin-bottom: 35px;
-    }
 
     @media screen and (min-width: 768px) {
         width: calc((100% - 60px) / 3);
@@ -74,14 +67,10 @@
 }
 
 .advantages__img {
-   @mixin flex-start {}
     /*display: flex;
     justify-content: flex-start;
     align-items: center;*/
-
-    @media screen and (min-width: 320px) {
-        padding-bottom: 16px;
-    }
+  padding-bottom: 16px;
 
     @media screen and (min-width: 768px) {
         padding-bottom: 36px;
@@ -111,21 +100,14 @@
     font-family: $acent-font;
     color: $primary-color;
     @include font(400, 48px, 55px, 0.04em);
-    /*font-weight: normal;
-    font-size: 48px;
-    line-height: 55px;
-    letter-spacing: 0.04em;*/
-
-    &--bottom {
+    
+    &-bottom {
         margin-bottom: 10px;
     }
 
     @media screen and (min-width: 768px) {
         color: $primary-color;
         @include font(400, 38px, 42px, 0.04em);
-        /*font-size: 38px;
-        line-height: 42px;
-        letter-spacing: 0.04em;*/
         text-align: left;
     }
 }
@@ -133,28 +115,17 @@
 .advantages__text {
     font-family: $primary-font;
     color: $dark-color;
-    font-weight: bold;
-    
-    @media screen and (min-width: 320px) {
-        @include font(700, 12px, 34px, 0.02em);
-        /*font-size: 12px;
-        line-height: 170%;
-        letter-spacing: 0.02em;*/
-        margin-right: 15px;
-    }
+ @include font(700, 12px, 20px, 0em); 
+        width: 230px;   
 
     @media screen and (min-width: 768px) {
-        @include font(700, 14px, 42px, 0.02em);
-        /*font-size: 14px;
-        line-height: 174%;
-        letter-spacing: 0.02em;*/
+        @include font(700, 14px, 24px, 0em);
+        width: 180px;
         margin-right: 15px;
     }
 
     @media screen and (min-width: 1280px) {
-        @include font(700, 16px, 49px, 0.02em);
-        /*font-size: 16px;
-        line-height: 176%;
-        letter-spacing: 0.02em;*/
+        @include font(700, 16px, 28px, 0em);
+        width: 330px;
     }
 }

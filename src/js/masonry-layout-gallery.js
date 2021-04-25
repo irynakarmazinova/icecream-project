@@ -1,7 +1,7 @@
 
 var $grid = $('.grid').masonry({
     itemSelector: '.grid__item',
-    gutter: 4
+    gutter: '.gutter_sizer'
 });
 
 $grid.on( 'click', '.grid__item', function() {
