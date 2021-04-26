@@ -88,10 +88,9 @@
   @include font(500, 12px, 14px, 0.01em);
 
   color: #fff;
-
-  &:focus {
-    color: $primary-color;
-  }
+  // &:focus {
+  //   color: $primary-color;
+  // }
 }
 
 .modal-form__input {
@@ -110,5 +109,12 @@
 
   &:focus {
     border-color: $primary-color;
+    color: black;
   }
+}
+
+.modal-form__text {
+  margin-top: 20px;
+  text-align: center;
+  color: #817e7e;
 }
