@@ -66,8 +66,10 @@
     }
   }
   @media screen and (min-width: 1280px) {
+    width: 335px;
     flex-basis: calc(100% / 3 - 24px);
     margin-left: 24px;
+
     &:before {
       top: 215px;
     }
@@ -161,9 +163,9 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  right: 43%;
+  // right: 43%;
   bottom: 41px;
-
+  right: 120px;
   border-radius: 50%;
   border: transparent;
   fill: $primary-color;
@@ -178,12 +180,14 @@
   }
 
   @media screen and (min-width: 768px) {
-    right: 41%;
+    // right: 41%;
+    right: 90px;
   }
 
   @media screen and (min-width: 1280px) {
     bottom: 50px;
-    right: 45%;
+    // right: 45%;
+    right: 168px;
   }
 }
 
