@@ -1,7 +1,7 @@
 // для описания основных стилей модального окна-модалка и ис-хиден
 .modal {
   position: absolute;
-  width: 310px;
+  min-width: 310px;
   min-height: 380px;
   padding: 44px;
   overflow: hidden;
@@ -25,6 +25,10 @@
   @media screen and (min-width: 1280px) {
     min-width: 420px;
     min-height: 450px;
+  }
+
+  &_light {
+    background-color: $secondary-color;
   }
 }
 
