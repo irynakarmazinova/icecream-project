@@ -3,8 +3,8 @@
   position: absolute;
   z-index: 505;
 
-  width: 80%;
-  height: 80%;
+  width: 70vw;
+  height: 80vh;
   padding: 5px;
   top: 50%;
   left: 50%;
@@ -12,14 +12,13 @@
   transform: translate(-50%, -50%);
   text-align: center;
 
-  background-color: $first-card-bgcolor;
-  border-radius: 3%;
+  background-color: $icon-bgcolor;
+  border-radius: 10px;
 
-  @media screen and (min-width: 768px) {
-    width: 620px;
-    height: 620px;
-    border-radius: 3%;
-  }
+  // @media screen and (min-width: 768px) {
+  //   // width: 620px;
+  //   // height: 620px;
+  // }
 }
 
 .modal__close-btn {
@@ -46,10 +45,13 @@
 
 .modal-contacts_text {
   margin-bottom: 10px;
-  @include font(700, 20px, 20px, 0.03em);
+  @include font(700, 12px, 10px, 0.03em);
   text-align: center;
   color: $primary-color;
-  // font-family: $acent-font;
+
+  @media screen and (min-width: 768px) {
+    @include font(700, 20px, 20px, 0.03em);
+  }
 }
 
 .size-map {
