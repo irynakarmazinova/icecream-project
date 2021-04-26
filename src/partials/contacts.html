@@ -101,14 +101,44 @@
 
     <!-- Модальное окно с картой-Franchise -->
     <div class="backdrop is-hidden" data-modal2>
-        <div class="modal-contacts">
-            <button class="modal__close-btn" type="button" data-modal-close2>
-                <svg class="modal__close-icon" width="32" height="32">
-                    <use href="images/sprite/sprite.svg#icon-close-btn"></use>
-                </svg>
-            </button>
-            <h3 class="modal-contacts--text">The franchise office is located at:</h3>
-            <iframe class="size-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2566.0063680409985!2d36.255512515464616!3d49.9737391294801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a080bb9c3751%3A0xe7bb89aef6a0f7c0!2z0JHQuNC30L3QtdGBLdGG0LXQvdGC0YAgItCQ0YDQuNGB0YLQvtC60YDQsNGCIiwg0L_RgNC-0YHQvy4g0JPQsNCz0LDRgNC40L3QsCwgNDMvMiwg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1sru!2sua!4v1619392998946!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="modal">
+          <div class="modal__modal-text">
+            <p class="modal__modal-question"
+          >Do you need a franchise agreement?</p
+        >
+        <p class="modal__modal-description">Leave a request and get a free consultation</p>
+          </div>
+        <form class="modal-form" action="#">
+          <label class="modal-form__label"
+            >Your name
+          <input class="modal-form__input" type="text" name="user-name" />
+          </label>
+
+          <label class="modal-form__label"
+            >Your phone number
+             <input
+                class="modal-form__input"
+                type="tel"
+                name="user-phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="093-629-70-70"
+              />
+          </label>
+
+          <button type="submit" class="btn-light">
+            to get the consultation
+          </button>
+          <p>data protected</p>
+        </form>
+        <button
+          type="button"
+          class="close-btn"
+          data-modal-close2
+        >
+          <svg class="close-btn__modal-icon" width="30" height="30">
+            <use href=""></use>
+          </svg>
+        </button>
         </div>
     </div>
 </section>
