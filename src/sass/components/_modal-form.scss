@@ -7,9 +7,8 @@
   overflow: hidden;
 
   background-color: $first-card-bgcolor;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  border: 1px solid $primary-color;
 
   top: 50%;
   left: 50%;
@@ -25,10 +24,6 @@
   @media screen and (min-width: 1280px) {
     min-width: 420px;
     min-height: 450px;
-  }
-
-  &_light {
-    background-color: $secondary-color;
   }
 }
 
