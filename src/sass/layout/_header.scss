@@ -86,3 +86,11 @@
     color: $primary-color;
   }
 }
+
+.home__list_fixed {
+  position: fixed;
+  right: 50px;
+  bottom: 0;
+  opacity: 0.5;
+  z-index: 1000;
+}
