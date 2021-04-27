@@ -1,9 +1,5 @@
 <header class="header">
-  <ul class="list home__list_fixed">
-    <li class="home__item_fixed">
-      <a href="#home" class="home__link link scrollto home__link_fixed">home</a>
-    </li>
-  </ul>
+  <a href="#home" class="home__link link scrollto home__link_fixed">home</a>
   <div class="header__container container">
     <a href="index.html">
       <img
@@ -50,42 +46,46 @@
   </div>
 
   <!-- MOBILE MENU/МОБИЛЬНОЕ МЕНЮ -->
-    <!-- <div class="backdrop"> -->
-      <div class="mobile-menu" data-menu>
-        <button class="close-btn close-btn__mobile" type="button" data-menu-close>
-          <svg class="close-btn__mobile-icon" width="30" height="30">
-            <use href="./images/sprite/sprite.svg#icon-close-btn"></use>
-          </svg>
-        </button>
-      
-        <button type="button" class="btn-light buy-now__btn-mobile" data-modal-open4>
-          Buy now
-          <svg class="icon-arrow-right icon-arrow-right_margin">
-            <use href="./images/sprite/sprite.svg#icon-arrow-right"></use>
-          </svg>
-        </button>
-      
-        <nav class="mobile-menu__navigation">
-          <ul class="list mobile-menu__list">
-            <li class="mobile-menu__item mobile-menu__item-dash">
-              <a href="#home" class="mobile-menu__link link scrollto ">Home</a>
-            </li>
-            <li class="mobile-menu__item mobile-menu__item-dash">
-              <a href="#about-us" class="mobile-menu__link link scrollto ">About us</a>
-            </li>
-            <li class="mobile-menu__item mobile-menu__item-dash">
-              <a href="#how-its-made" class="mobile-menu__link link scrollto">How it's made?</a>
-            </li>
-            <li class="mobile-menu__item mobile-menu__item-dash">
-              <a href="#our-products" class="mobile-menu__link link scrollto">Our products</a>
-            </li>
-            <li class="mobile-menu__item mobile-menu__item-dash mobile-menu__item-dash_bottom">
-              <a href="#contact" class="mobile-menu__link link scrollto">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    <!-- </div> -->
+
+  <!-- для моб.меню -->
+  <div class="backdrop is-hidden">
+    <div class="modal" data-menu>
+      <button class="close-btn close-btn__mobile" type="button" data-menu-close>
+        <svg class="close-btn__mobile-icon" width="30" height="30">
+          <use href="./images/sprite/sprite.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+
+      <button type="button" class="btn-light buy-now__btn-mobile" data-modal-open4>
+        Buy now
+        <svg class="icon-arrow-right icon-arrow-right_margin">
+          <use href="./images/sprite/sprite.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+
+      <nav class="mobile-menu__navigation">
+        <ul class="list mobile-menu__list">
+          <li class="mobile-menu__item mobile-menu__item-dash">
+            <a href="#home" class="mobile-menu__link link scrollto">Home</a>
+          </li>
+          <li class="mobile-menu__item mobile-menu__item-dash">
+            <a href="#about-us" class="mobile-menu__link link scrollto">About us</a>
+          </li>
+          <li class="mobile-menu__item mobile-menu__item-dash">
+            <a href="#how-its-made" class="mobile-menu__link link scrollto">How it's made?</a>
+          </li>
+          <li class="mobile-menu__item mobile-menu__item-dash">
+            <a href="#our-products" class="mobile-menu__link link scrollto">Our products</a>
+          </li>
+          <li class="mobile-menu__item mobile-menu__item-dash mobile-menu__item-dash_bottom">
+            <a href="#contact" class="mobile-menu__link link scrollto">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- для кнопки buy-now -->
   <div class="backdrop is-hidden" data-modal3 data-modal4>
     <div class="modal is-hidden__modal">
       <button type="button" class="close-btn close-btn__modal" data-modal-close3>
@@ -93,24 +93,42 @@
           <use href="./images/sprite/sprite.svg#icon-close-btn"></use>
         </svg>
       </button>
-      <b class="header-title suptitle">Do you want <span class="header-title_suptitle"> the most delicious ice
-          cream?</span>
+      <b class="header-title suptitle"
+        >Do you want <span class="header-title_suptitle"> the most delicious ice cream?</span>
       </b>
       <form action="#" class="header-modal" autocomplete="off">
         <label for="name" class="header-modal__label">Name</label>
-  
-        <input type="text" name="user-name" id="name" class="header-modal__input" minlength="2" required
-          autocomplete="off" />
-  
+
+        <input
+          type="text"
+          name="user-name"
+          id="name"
+          class="header-modal__input"
+          minlength="2"
+          required
+          autocomplete="off"
+        />
+
         <label for="phone" class="header-modal__label">Phone</label>
-  
-        <input type="tel" name="user-phone" id="phone" class="header-modal__input" title="+38(код оператора)-111-11-11"
-          required />
-  
+
+        <input
+          type="tel"
+          name="user-phone"
+          id="phone"
+          class="header-modal__input"
+          title="+38(код оператора)-111-11-11"
+          required
+        />
+
         <label for="comment" class="header-modal__label">Comment</label>
-        <textarea class="header-modal__textarea header-modal__input" name="user-comment" id="comment"
-          placeholder="Enter text" required></textarea>
-  
+        <textarea
+          class="header-modal__textarea header-modal__input"
+          name="user-comment"
+          id="comment"
+          placeholder="Enter text"
+          required
+        ></textarea>
+
         <button type="submit" class="btn-light header-modal_btn">send</button>
       </form>
     </div>
