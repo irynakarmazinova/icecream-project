@@ -14,11 +14,19 @@
 }
 
 .burger-btn {
+  position: absolute;
+  top: 17px;
+  right: 24px;
+  z-index: 530;
   background-color: transparent;
   border: none;
   padding: 0;
   width: 20px;
   height: 25px;
+  @media screen and (min-width: 768px) {
+    top: 48px;
+    right: 238px;
+  }
 }
 
 @media screen and (max-width: 1279px) {
