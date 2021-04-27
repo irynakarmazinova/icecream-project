@@ -32,7 +32,7 @@
     </nav>
     <div class="header__menu_btn">
       <!-- иконка бургер меню -->
-      <button class="burger-btn" type="button" data-menu-button>
+      <button class="burger-btn" type="button" data-modal-open>
         <svg class="icon-burger" width="28" height="30">
           <use href="./images/sprite/sprite.svg#icon-menu"></use>
         </svg>
@@ -50,9 +50,9 @@
   <!-- MOBILE MENU/МОБИЛЬНОЕ МЕНЮ -->
 
   <!-- для моб.меню -->
-  <div class="backdrop is-hidden">
-    <div class="modal" data-menu>
-      <button class="close-btn close-btn__mobile" type="button" data-modal-close3>
+  <div class="backdrop is-hidden_madal" data-modal>
+    <div class="mobile-menu">
+      <button class="close-btn close-btn__mobile" type="button" data-modal-close>
         <svg class="close-btn__mobile-icon" width="30" height="30">
           <use href="./images/sprite/sprite.svg#icon-close-btn"></use>
         </svg>
@@ -90,7 +90,7 @@
   <!-- для кнопки buy-now -->
   <div class="backdrop is-hidden" data-modal3 data-modal4>
     <div class="modal is-hidden__modal">
-      <button type="button" class="close-btn close-btn__modal" data-modal-close3 data-modal-close4>
+      <button type="button" class="close-btn close-btn__modal" data-modal-close3>
         <svg class="modal__icon-close" width="30" height="30">
           <use href="./images/sprite/sprite.svg#icon-close-btn"></use>
         </svg>

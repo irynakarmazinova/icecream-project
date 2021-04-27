@@ -1,6 +1,7 @@
 // для описания основных стилей модального окна-модалка и ис-хиден
 .modal {
-  position: absolute;
+  position: fixed;
+  z-index: 120;
   min-width: 310px;
   min-height: 380px;
   padding: 44px;
