@@ -1,10 +1,10 @@
 // для описания стилей мобильного меню
 .mobile-menu {
-  position: fixed;
+  position: absolute;
   z-index: 503;
   top: 0;
   right: 0;
-  width: 250px;
+  width: 260px;
   height: 100vh;
   padding: 60px 21px;
   background-color: $mobile-bgcolor;
@@ -17,7 +17,7 @@
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
-    width: 35vw;
+    width: 40vw;
   }
 }
 
