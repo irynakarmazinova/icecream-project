@@ -61,7 +61,7 @@
       </button>
 
       <!-- кнопка бай нау в моб.меню -->
-      <button type="button" class="btn-light buy-now__btn-mobile" data-modal-open4>
+      <button type="button" class="btn-light buy-now__btn-mobile" data-modal-open4 data-modal-close>
         Buy now
         <svg class="icon-arrow-right icon-arrow-right_margin">
           <use href="./images/sprite/sprite.svg#icon-arrow-right"></use>
@@ -82,10 +82,12 @@
             >
           </li>
           <li class="mobile-menu__item mobile-menu__item-dash">
-            <a href="#our-products" class="mobile-menu__link link scrollto">Our products</a>
+            <a href="#our-products" class="mobile-menu__link link scrollto" data-modal-close
+              >Our products</a
+            >
           </li>
           <li class="mobile-menu__item mobile-menu__item-dash mobile-menu__item-dash_bottom">
-            <a href="#contact" class="mobile-menu__link link scrollto">Contact</a>
+            <a href="#contact" class="mobile-menu__link link scrollto" data-modal-close>Contact</a>
           </li>
         </ul>
       </nav>
