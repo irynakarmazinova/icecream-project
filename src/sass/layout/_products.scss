@@ -36,12 +36,23 @@
 .products__social_item {
   position: relative;
   border-radius: 24px;
-  // border: 1px solid #eeeeee;
+  padding-top: 161px;
+  padding-bottom: 111px;
   border: 1px solid transparent;
 
   @media screen and(max-width:767px) {
     &:not(:last-child) {
       margin-bottom: 130px;
+    }
+
+    @media screen and(min-width:768px) {
+      padding-top: 152px;
+      padding-bottom: 120px;
+    }
+
+    @media screen and(min-width:1280px) {
+      padding-top: 163px;
+      padding-bottom: 152px;
     }
   }
 
@@ -117,15 +128,9 @@
 
   color: $secondary-color;
   margin-bottom: 66px;
-  margin-top: 161px;
-
-  @media screen and (min-width: 768px) {
-    margin-top: 152px;
-  }
 
   @media screen and (min-width: 1280px) {
     @include font(400, 30px, 34px, 0.04em);
-    margin-top: 163px;
   }
 }
 
@@ -133,24 +138,22 @@
   display: inline-block;
   font-family: $primary-font;
   @include font(700, 14px, 21px, 0.04em);
-
-  color: $secondary-color;
-
-  margin-bottom: 111px;
   width: 200px;
   text-align: center;
   align-items: center;
   justify-content: center;
 
+  color: $secondary-color;
+
   @media screen and (min-width: 768px) {
     @include font(700, 14px, 25px, 0.04em);
-    margin-bottom: 120px;
+    margin-bottom: 10px;
     width: 198px;
   }
 
   @media screen and (min-width: 1280px) {
     @include font(700, 16px, 28px, 0.04em);
-    margin-bottom: 152px;
+    margin-bottom: 42px;
     width: 241px;
   }
 }

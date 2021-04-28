@@ -56,6 +56,12 @@
   }
 }
 
+.footer__contacts {
+  @media screen and (max-width: 1279px) {
+    margin-bottom: 43px;
+  }
+}
+
 .footer__social_list {
   display: flex;
   justify-content: flex-end;
@@ -99,13 +105,8 @@
 
 .footer__number {
   margin-top: 46px;
-  margin-bottom: 43px;
   display: flex;
   justify-content: flex-end;
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: unset;
-  }
 }
 
 .footer__appeal {
