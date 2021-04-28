@@ -21,12 +21,10 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: center;
   }
 
   @media screen and (min-width: 1280px) {
     display: flex;
-    justify-content: center;
   }
 }
 
@@ -55,7 +53,7 @@
     &:nth-child(3n + 3) {
       margin-right: 0px;
     }
-  } 
+  }
 }
 
 .advantages__img {
@@ -75,7 +73,7 @@
 
 .advantages__icon::before {
   display: block;
-  content: "";
+  content: '';
   background-image: url(../images/advantages/cup1@1x.png);
   width: 33px;
   height: 50px;
@@ -83,7 +81,7 @@
 
 .advantages__icon-one::before {
   display: block;
-  content: "";
+  content: '';
   background-image: url(../images/advantages/cherry1@1x.png);
   width: 50px;
   height: 50px;
@@ -91,7 +89,7 @@
 
 .advantages__icon-two::before {
   display: block;
-  content: "";
+  content: '';
   background-image: url(../images/advantages/heart1@1x.png);
   width: 44px;
   height: 50px;
@@ -101,25 +99,25 @@
   font-family: $acent-font;
   color: $primary-color;
 
-  @media screen and (min-width: 320px){
+  @media screen and (min-width: 320px) {
     @include font(400, 36px, 41px, 0.04em);
-      display: inline-block;
-      margin-bottom: 10px; 
-}
+    display: inline-block;
+    margin-bottom: 10px;
+  }
 
   @media screen and (min-width: 768px) {
     @include font(400, 48px, 55px, 0.04em);
-      text-align: left;
-      color: $primary-color;
-      display: inline-block;
-      margin-bottom: 13px;
+    text-align: left;
+    color: $primary-color;
+    display: inline-block;
+    margin-bottom: 13px;
   }
 
   @media screen and (min-width: 1280px) {
     @include font(400, 58px, 66px, 0.04em);
-      display: inline-block;
-      margin-bottom: 16px;
-  }     
+    display: inline-block;
+    margin-bottom: 16px;
+  }
 }
 
 .advantages__text {
