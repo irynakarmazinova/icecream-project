@@ -4,7 +4,7 @@
   z-index: 503;
   top: 0;
   right: 0;
-  width: 260px;
+  width: 100vw;
   height: 100vh;
   padding: 60px 21px;
   background-color: $mobile-bgcolor;
@@ -13,6 +13,10 @@
   display: flex;
   flex-direction: column;
   overflow: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 260px;
+  }
 }
 
 .is-hidden_madal {
@@ -56,13 +60,12 @@
 .mobile-menu__item-dash {
   border-top: 1px solid $dash-mobmenu-color;
   padding: 12px 0px 12px;
-  width: 200%;
 }
 
 .mobile-menu__item-dash_bottom {
   border-bottom: 1px solid $dash-mobmenu-color;
   margin-right: 35px;
-  width: 200%;
+  width: 100%;
 }
 
 .header-title {
