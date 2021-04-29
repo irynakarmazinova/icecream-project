@@ -38,6 +38,7 @@
         </svg>
       </button>
 
+      <!-- бай нау в хэдэре -->
       <button type="button" class="btn-light buy-now__btn" data-modal-open3>
         Buy now
         <svg class="icon-arrow-right">
@@ -52,13 +53,15 @@
   <!-- для моб.меню -->
   <div class="backdrop is-hidden_madal" data-modal>
     <div class="mobile-menu">
+      <!-- кнопка закрытия моб.меню -->
       <button class="close-btn close-btn__mobile" type="button" data-modal-close>
         <svg class="close-btn__mobile-icon" width="30" height="30">
           <use href="./images/sprite/sprite.svg#icon-close-btn"></use>
         </svg>
       </button>
 
-      <button type="button" class="btn-light buy-now__btn-mobile" data-modal-open4>
+      <!-- кнопка бай нау в моб.меню -->
+      <button type="button" class="btn-light buy-now__btn-mobile" data-modal-open4 data-modal-close>
         Buy now
         <svg class="icon-arrow-right icon-arrow-right_margin">
           <use href="./images/sprite/sprite.svg#icon-arrow-right"></use>
@@ -68,29 +71,42 @@
       <nav class="mobile-menu__navigation">
         <ul class="list mobile-menu__list">
           <li class="mobile-menu__item mobile-menu__item-dash">
-            <a href="#home" class="mobile-menu__link link scrollto">Home</a>
+            <a href="#home" class="mobile-menu__link link scrollto" data-modal-close>Home</a>
           </li>
           <li class="mobile-menu__item mobile-menu__item-dash">
-            <a href="#about-us" class="mobile-menu__link link scrollto">About us</a>
+            <a href="#about-us" class="mobile-menu__link link scrollto" data-modal-close
+              >About us</a
+            >
           </li>
           <li class="mobile-menu__item mobile-menu__item-dash">
-            <a href="#how-its-made" class="mobile-menu__link link scrollto">How it's made?</a>
+            <a href="#how-its-made" class="mobile-menu__link link scrollto" data-modal-close
+              >How it's made?</a
+            >
           </li>
           <li class="mobile-menu__item mobile-menu__item-dash">
-            <a href="#our-products" class="mobile-menu__link link scrollto">Our products</a>
+            <a href="#our-products" class="mobile-menu__link link scrollto" data-modal-close
+              >Our products</a
+            >
           </li>
           <li class="mobile-menu__item mobile-menu__item-dash mobile-menu__item-dash_bottom">
-            <a href="#contact" class="mobile-menu__link link scrollto">Contact</a>
+            <a href="#contact" class="mobile-menu__link link scrollto" data-modal-close>Contact</a>
           </li>
         </ul>
       </nav>
     </div>
   </div>
 
-  <!-- для кнопки buy-now -->
+  <!-- модальное окно кнопки buy-now -->
   <div class="backdrop is-hidden" data-modal3 data-modal4>
     <div class="modal is-hidden__modal">
+      <!-- закрытие модального окна кнопки бай нау(в хэдэре) -->
       <button type="button" class="close-btn close-btn__modal" data-modal-close3>
+        <svg class="modal__icon-close" width="30" height="30">
+          <use href="./images/sprite/sprite.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+      <!-- закрытие модального окна кнопки бай нау(в моб.меню) -->
+      <button type="button" class="close-btn close-btn__modal" data-modal-close4>
         <svg class="modal__icon-close" width="30" height="30">
           <use href="./images/sprite/sprite.svg#icon-close-btn"></use>
         </svg>
@@ -100,7 +116,6 @@
       </b>
       <form action="#" class="header-modal" autocomplete="off">
         <label for="name" class="header-modal__label">Name</label>
-
         <input
           type="text"
           name="user-name"
@@ -112,13 +127,13 @@
         />
 
         <label for="phone" class="header-modal__label">Phone</label>
-
         <input
           type="tel"
           name="user-phone"
           id="phone"
           class="header-modal__input"
           title="+61(0)383766284"
+          pattern="[^0-9]{1}[0-9]{2}[^0-9]{1}[0-9]{1}[^0-9]{1}[0-9]{3}[0-9]{3}[0-9]{3}"
           required
         />
 
