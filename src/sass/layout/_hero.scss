@@ -342,7 +342,7 @@
   @media screen and (min-width: 768px) {
     position: absolute;
     right: 35px;
-    top: 8px;
+    top: -8px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -385,7 +385,7 @@
     text-align: right;
     position: absolute;
     right: 42px;
-    top: 12px;
+    top: -5px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -403,9 +403,6 @@
 }
 
 .hero__text {
-  position: sticky;
-  top: 0;
-  right: 45px;
   font-family: $acent-font;
   @include font(400, 28px, 32px, 0.04em);
   text-transform: uppercase;
