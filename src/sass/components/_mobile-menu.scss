@@ -15,24 +15,17 @@
   overflow: auto;
 
   @media screen and (min-width: 768px) {
-    width: 260px;
-  }
-}
-
-.is-hidden_madal {
-  transform: translateX(100%);
-}
-
-@media screen and (min-width: 768px) {
-  .mobile-menu {
+    // width: 260px;
     width: 40vw;
   }
-}
 
-@media screen and (min-width: 1280px) {
-  .mobile-menu {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
+}
+
+.is-hidden_modal {
+  transform: translateX(100%);
 }
 
 // для описания стилей мобильного меню

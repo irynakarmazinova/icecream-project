@@ -18,6 +18,17 @@
     color: $secondary-color;
     background: $primary-color;
   }
+
+  &_acent {
+    color: $secondary-color;
+    background: $primary-color;
+
+    &:hover,
+    &:focus {
+      color: $primary-color;
+      background: $secondary-color;
+    }
+  }
 }
 
 // стрелочка-иконка для кнопки
