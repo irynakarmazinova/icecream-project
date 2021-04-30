@@ -9,10 +9,40 @@
   transform: translateX(-50%);
 }
 
-.header__logo {
-  width: 199px;
-  height: 50px;
+//=========== Логотип ==============
+.logo__link {
+  display: flex;
+  align-items: center;
 }
+
+.icon__logo {
+  fill: $primary-color;
+  transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    fill: $secondary-color;
+  }
+}
+
+.logo__text {
+  display: flex;
+  margin-left: 15px;
+  font-family: $acent-font;
+  @include font(400, 30px, 23px, 0.04em);
+  text-transform: uppercase;
+
+  color: $primary-color;
+}
+
+.logo__text_animate {
+  padding-right: 1px;
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    transform: translateY(-25px);
+    color: $primary-bgcolor;
+  }
+}
+
+//=========== End Логотип ==============
 
 .icon-burger {
   fill: $primary-color;
