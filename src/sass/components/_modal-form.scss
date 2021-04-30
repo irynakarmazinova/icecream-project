@@ -1,12 +1,12 @@
 // для описания основных стилей модального окна-модалка и ис-хиден
 .modal {
   position: fixed;
-  z-index: 120;
-  min-width: 310px;
-  min-height: 380px;
-  padding: 44px;
-  overflow: hidden;
 
+  z-index: 120;
+  width: 310px;
+  min-height: 380px;
+  padding: 35px;
+  overflow: hidden;
   background-color: $icon-bgcolor;
   border-radius: 10px;
   // border: 1px solid $primary-color;
@@ -18,12 +18,12 @@
   overflow-y: auto;
 
   @media screen and (min-width: 768px) {
-    min-width: 350px;
+    width: 350px;
     min-height: 450px;
   }
 
   @media screen and (min-width: 1280px) {
-    min-width: 420px;
+    width: 420px;
     min-height: 450px;
   }
 }
@@ -38,17 +38,38 @@
 }
 
 // для описания стилей модального окна
-.modal__title {
-  position: relative;
-  margin-bottom: 20px;
-  text-align: center;
-  font-family: $acent-font;
-  @include font(400, 30px, 34px, 0.04em);
-  text-transform: uppercase;
-
-  color: $primary-color;
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+.modal__title {
+  position: relative;
+  display: block;
+  margin-bottom: 12px;
+  text-align: center;
+  font-family: $acent-font;
+  color: $secondary-color;
+  @include font(400, 18px, 21px, 0.04em);
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    @include font(400, 26px, 30px, 0em);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(400, 30px, 34px, 0.04em);
+  }
+
+  &_center {
+    text-align: center;
+  }
+}
+.modal__title_suptitle {
+  color: $primary-color;
+  text-align: center;
+}
 .modal__description {
   margin-bottom: 40px;
 
@@ -64,4 +85,69 @@
     color: $description-color;
     text-align: center;
   }
+}
+.modal__form-description {
+  margin-bottom: 12px;
+  color: $secondary-color;
+  @include font(400, 12px, 18px, 0.03em);
+  text-align: center;
+}
+.modal-form__label {
+  display: flex;
+  justify-content: flex-start;
+  font-family: $primary-font;
+  @include font(400, 12px, 16px, 0.01em);
+  margin-bottom: 4px;
+  cursor: pointer;
+  color: $secondary-color;
+}
+
+.modal-form__input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 11px 15px;
+  margin-bottom: 8px;
+  transition: border-color 250ms linear;
+  &:focus {
+    border-color: $primary-color;
+    outline: none;
+  }
+}
+.modal-form__input-last {
+  margin-bottom: 0;
+}
+
+.modal-form__text {
+  margin-top: 20px;
+  text-align: center;
+  @include font(400, 14px, 21px, 0em);
+  color: $description-color;
+}
+
+.modal-form__textarea {
+  resize: none;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms linear;
+
+  &::placeholder {
+    @include font(400, 12px, 16px, 0.01em);
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:focus {
+    border-color: $primary-color;
+    outline: none;
+  }
+}
+// для центрирования кнопки в форме
+.modal__btn {
+  align-self: center;
+  text-align: center;
+  margin-top: 20px;
 }

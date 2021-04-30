@@ -86,49 +86,49 @@
 
         <!-- Модальное окно с картой-Our Locations -->
     <div class="backdrop is-hidden" data-modal1>
-        <div class="modal-contacts">
-            <button class="modal__close-btn" type="button" data-modal-close1>
-                <svg class="modal__close-icon" width="32" height="32">
+        <div class="modal">
+            <button class="close-btn close-btn__modal" type="button" data-modal-close1>
+                <svg class="modal__close-icon" width="30" height="30">
                     <use href="images/sprite/sprite.svg#icon-close-btn"></use>
                 </svg>
             </button>
-            <h3 class="modal-contacts_text">Our cafe is located at:</h3>
-            <iframe class="size-map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1078.2838158560965!2d36.2299361562443!3d50.00000392922849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0e0d6d43929%3A0xbe1a7c9519f39cf1!2z0JrRgNC40YHRgtCw0LvQuw!5e0!3m2!1sru!2sua!4v1619355978337!5m2!1sru!2sua"
-                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <h3 class="modal__title">Our cafe <span class="modal__title_suptitle">is located at:</span></h3>
+           <iframe class="contacts-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10258.38845131621!2d36.2307831!3d50.0001625!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbe1a7c9519f39cf1!2z0JrRgNC40YHRgtCw0LvQuw!5e0!3m2!1sru!2sua!4v1619717248700!5m2!1sru!2sua"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
 
     <!-- Модальное окно с картой-Franchise -->
     <div class="backdrop is-hidden" data-modal2>
         <div class="modal">
-          <div class="modal__modal-text">
-            <p class="modal__modal-question">Do you need a franchise agreement?</p>
-            <p class="modal__modal-description">Leave a request and get a free consultation</p>
-          </div>
+         
+            <p class="modal__title"> Do you need <span class="modal__title_suptitle">a franchise agreement?</span></p>
+            <p class="modal__form-description">Leave a request and get a free consultation</p>
+ 
           
-        <form class="modal-form" action="#">
-          <label class="modal-form__label">Your name
-            <input class="modal-form__input" type="text" name="user-name"/>
-          </label>
+        <form class="modal-form" action="#" autocomplete="off">
+          <label class="modal-form__label">Your name </label>
+            <input class="modal-form__input" type="text" name="user-name" autocomplete="off" required/>
+         
 
-          <label class="modal-form__label"
-            >Your phone number
+          <label class="modal-form__label "
+            >Your phone number</label>
              <input
-                class="modal-form__input"
+                class="modal-form__input modal-form__input-last"
                 type="tel"
                 name="user-phone"
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                 title="093-629-70-70"
+                autocomplete="off"
+                required
               />
-          </label>
+          
 
-          <button type="button" class="btn-light">To get the consultation</button>
+          <button type="submit" class="btn-light modal__btn">To get the consultation</button>
           <p class="modal-form__text">&#169; Data protected</p>
         </form>
         
-        <button type="button" class="modal__close-btn"data-modal-close2>
-          <svg class="modal__close-icon" width="32" height="32">
+        <button type="button" class="close-btn close-btn__modal"data-modal-close2>
+          <svg class="modal__icon-close" width="30" height="30">
             <use href="images/sprite/sprite.svg#icon-close-btn"></use>
           </svg>
         </button>
