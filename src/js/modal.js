@@ -27,6 +27,6 @@ refs.closeModalBtn.forEach(button => {
   // refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle('is-hidden_madal');
+    refs.modal.classList.toggle('is-hidden_modal');
   }
 })();
