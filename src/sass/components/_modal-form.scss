@@ -1,7 +1,6 @@
 // для описания основных стилей модального окна-модалка и ис-хиден
 .modal {
   position: fixed;
-
   z-index: 120;
   width: 310px;
   min-height: 380px;
@@ -9,7 +8,6 @@
   overflow: hidden;
   background-color: $icon-bgcolor;
   border-radius: 10px;
-  // border: 1px solid $primary-color;
 
   top: 50%;
   left: 50%;
