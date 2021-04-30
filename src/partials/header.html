@@ -121,42 +121,42 @@
           <use href="./images/sprite/sprite.svg#icon-close-btn"></use>
         </svg>
       </button>
-      <b class="header-title suptitle"
-        >Do you want <span class="header-title_suptitle"> the most delicious ice cream?</span>
-      </b>
-      <form action="#" class="header-modal" autocomplete="off">
-        <label for="name" class="header-modal__label">Name</label>
+      <h3 class="modal__title">
+        Do you want <span class="modal__title_suptitle"> the most delicious ice cream?</span>
+      </h3>
+      <form action="#" class="modal-form" autocomplete="off">
+        <label for="name" class="modal-form__label">Your name</label>
         <input
           type="text"
           name="user-name"
           id="name"
-          class="header-modal__input"
+          class="modal-form__input"
           minlength="2"
           required
           autocomplete="off"
         />
 
-        <label for="phone" class="header-modal__label">Phone</label>
+        <label for="phone" class="modal-form__label">Your phone number</label>
         <input
           type="tel"
           name="user-phone"
           id="phone"
-          class="header-modal__input"
+          class="modal-form__input"
           title="+61(0)383766284"
           pattern="[^0-9]{1}[0-9]{2}[^0-9]{1}[0-9]{1}[^0-9]{1}[0-9]{3}[0-9]{3}[0-9]{3}"
           required
         />
 
-        <label for="comment" class="header-modal__label">Comment</label>
+        <label for="comment" class="modal-form__label">Comment</label>
         <textarea
-          class="header-modal__textarea header-modal__input"
+          class="modal-form__textarea"
           name="user-comment"
           id="comment"
           placeholder="Enter text"
           required
         ></textarea>
 
-        <button type="submit" class="btn-light header-modal_btn">send</button>
+        <button type="submit" class="btn-light modal__btn">send</button>
       </form>
     </div>
   </div>
