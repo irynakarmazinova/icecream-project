@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/advantages/cup1@1x.png":[["cup1@1x.da974c91.png","OSy4"],"OSy4"],"./../images/advantages/cherry1@1x.png":[["cherry1@1x.c4734f04.png","Tr4J"],"Tr4J"],"./../images/advantages/heart1@1x.png":[["heart1@1x.1934126e.png","cVti"],"cVti"],"./../images/reviews/quotes.svg":[["quotes.7e90090a.svg","Fmas"],"Fmas"],"./../images/reviews/dots.svg":[["dots.8517bf52.svg","ma7s"],"ma7s"],"./../images/reviews/home.svg":[["home.f902e0eb.svg","r2u0"],"r2u0"],"/home/runner/work/icecream-project/icecream-project/src/images/desktop/contacts/contacts-background@1x.png":[["contacts-background@1x.6fd30241.png","e0BG"],"e0BG"],"/home/runner/work/icecream-project/icecream-project/src/images/desktop/contacts/contacts-background@2x.png":[["contacts-background@2x.1143ba83.png","fjTC"],"fjTC"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/icecream-project/src.90339331.js.map
+//# sourceMappingURL=/icecream-project/src.f916b86f.js.map
