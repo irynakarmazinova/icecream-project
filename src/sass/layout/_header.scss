@@ -131,7 +131,16 @@
   opacity: 1;
   z-index: 26;
 
+  display: block;
+  padding: 8px;
+  border-radius: 50px;
+
   color: $primary-color;
   font-family: $acent-font;
   @include font(400, 12px, 14px, 0.01em);
+
+  &:hover {
+    color: $secondary-color;
+    background-color: $primary-color;
+  }
 }
