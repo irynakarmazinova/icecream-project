@@ -1,7 +1,6 @@
 // для описания основных стилей модального окна-модалка и ис-хиден
 .modal {
   position: fixed;
-
   z-index: 120;
   width: 310px;
   min-height: 380px;
@@ -9,7 +8,6 @@
   overflow: hidden;
   background-color: $icon-bgcolor;
   border-radius: 10px;
-  // border: 1px solid $primary-color;
 
   top: 50%;
   left: 50%;
@@ -66,10 +64,12 @@
     text-align: center;
   }
 }
+
 .modal__title_suptitle {
   color: $primary-color;
   text-align: center;
 }
+
 .modal__description {
   margin-bottom: 40px;
 
@@ -86,12 +86,14 @@
     text-align: center;
   }
 }
+
 .modal__form-description {
   margin-bottom: 12px;
   color: $secondary-color;
   @include font(400, 12px, 18px, 0.03em);
   text-align: center;
 }
+
 .modal-form__label {
   display: flex;
   justify-content: flex-start;
@@ -115,6 +117,7 @@
     outline: none;
   }
 }
+
 .modal-form__input-last {
   margin-bottom: 0;
 }
@@ -145,6 +148,7 @@
     outline: none;
   }
 }
+
 // для центрирования кнопки в форме
 .modal__btn {
   align-self: center;

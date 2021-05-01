@@ -1,7 +1,7 @@
 // для описания стилей всех кнопок
-.btn-light {
+.btn-primary {
   @include flex-center;
-  padding: 11px 38px;
+  padding: 11px 25px;
 
   font-family: $primary-font;
   @include font(700, 14px, 18px, 0em);
@@ -18,6 +18,61 @@
     color: $secondary-color;
     background: $primary-color;
   }
+
+  // базовая розовая кнопка
+  &_acent {
+    color: $secondary-color;
+    background: $primary-color;
+
+    &:hover,
+    &:focus {
+      color: $primary-color;
+      background: $secondary-color;
+    }
+  }
+
+  // кнопка бай нау в мобильном меню
+  &_mobile {
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  // кнопка бай нау в секции хэдэр
+  &_header {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      margin-left: 30px;
+    }
+  }
+
+  // для кнопок в секции хиро
+  // это вообще нужно и работает ли??
+  &_position {
+    position: sticky;
+    z-index: 50;
+  }
+
+  // розовая кнопка в секции контактс
+  &_margin-acent {
+    @media screen and(max-width:767px) {
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+
+    @media screen and(min-width:768px) {
+      margin-right: 15px;
+    }
+  }
+
+  // белая кнопка в секции контактс
+  &_margin-light {
+    @media screen and(max-width:767px) {
+      margin: 0 auto;
+    }
+  }
 }
 
 // стрелочка-иконка для кнопки
@@ -27,12 +82,12 @@
   width: 15px;
   height: 10px;
 
-  &_margin {
-    margin-left: 17px;
-    @media screen and (min-width: 768px) {
-      margin-left: 15px;
-    }
-  }
+  // &_margin {
+  //   margin-left: 17px;
+  //   @media screen and (min-width: 768px) {
+  //     margin-left: 15px;
+  //   }
+  // }
 }
 
 // кнопка закрытия
@@ -72,71 +127,5 @@
     @media screen and (min-width: 1280px) {
       right: 34px;
     }
-  }
-}
-
-// header- кнопка
-.buy-now__btn {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 768px) {
-    @include font(700, 16px, 21px, 0.05em);
-    margin-left: 30px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-left: 0px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .header__container {
-    padding-top: 6px;
-  }
-}
-
-// contacts-розовая кнопка
-.contacts-accent-btn {
-  padding: 11px 18px;
-
-  color: $secondary-color;
-  background-color: $primary-color;
-
-  &:hover,
-  &:focus {
-    color: $primary-color;
-    background-color: $secondary-color;
-  }
-
-  @media screen and(max-width:767px) {
-    margin: 0 auto;
-    margin-bottom: 10px;
-  }
-
-  @media screen and(min-width:768px) {
-    padding: 11px 32px;
-    margin-right: 15px;
-  }
-
-  @media screen and(min-width:1280px) {
-    padding: 11px 36px;
-  }
-}
-
-// contacts-белая кнопка
-.contacts-light-btn {
-  padding: 10px 32px;
-
-  @media screen and(max-width:767px) {
-    margin: 0 auto;
-  }
-  @media screen and(min-width:768px) {
-    padding: 10px 38px;
-  }
-
-  @media screen and(min-width:1280px) {
-    padding: 11px 40px;
   }
 }
