@@ -17,16 +17,26 @@
 .grid {
   margin: 0 auto;
   position: relative;
-  width: 280px;
+  // width: 280px;
+  max-width: 280px;
   display: grid;
   grid-auto-flow: dense;
 
   @media screen and(min-width:768px) {
-    width: 620px;
+    // width: 620px;
+    max-width: 620px;
   }
 
   @media screen and(min-width:1280px) {
-    width: 1050px;
+    // width: 1050px;
+    max-width: 1050px;
+  }
+
+  /* clearfix */
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
   }
 }
 
@@ -42,19 +52,17 @@
 
 .grid__item {
   float: left;
-  // width: 36px;
   width: 90px;
-  // margin-bottom: 4px;
+  // height: auto;
   margin-bottom: 4px;
 
   @media screen and(min-width:768px) {
-    // width: 85px;
-    width: 180px;
+    // width: 180px;
+    width: 150px;
     margin-bottom: 8px;
   }
 
   @media screen and(min-width:1280px) {
-    // width: 140px;
     margin-bottom: 10px;
   }
 
@@ -64,22 +72,16 @@
 }
 
 .grid__item_gigante {
-  // width: 72px;
   width: 180px;
 
   @media screen and(min-width:768px) {
-    // width: 170px;
     width: 360px;
   }
-
-  // @media screen and(min-width:1280px) {
-  //   width: 280px;
-  // }
 }
 
-.animate__pulse:hover {
-  // .animate__pulse:focus {
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  // animation-iteration-count: 2;
+.grid_columnWidth {
+  width: 90px;
+  @media screen and(min-width:768px) {
+    width: 150px;
+  }
 }
