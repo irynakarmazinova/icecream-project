@@ -17,6 +17,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .products__social_list {
@@ -137,6 +138,7 @@
   font-family: $primary-font;
   @include font(700, 14px, 21px, 0.04em);
   width: 200px;
+
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -155,37 +157,80 @@
 }
 
 // круглая белая кнопка
-.products__btn {
+
+.product-overlay {
   position: absolute;
+  bottom: 41px;
+  right: 50%;
+  z-index: 5;
+  transform: translateX(50%);
+  @media screen and (min-width: 768px) {
+    bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: 50px;
+  }
+}
+.product-overlay__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.product-overlay__position {
+  background: linear-gradient(#f88ca5, $first-card-bgcolor);
+  border-top: 4px solid #ffffff;
+  border-radius: 24px;
+  overflow-y: auto;
+  transform: translateY(0);
+  opacity: 0;
+  transition: opacity 250ms linear, transform 250ms linear;
+}
+.products__overlay_text {
+  min-width: 279px;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+  @media screen and (min-width: 768px) {
+    min-width: 219px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-width: 329px;
+  }
+}
+.products__btn:hover + .product-overlay__position,
+.products__btn:focus + .product-overlay__position {
+  transform: translateY(-10%);
+  opacity: 1;
+}
+.products__btn {
+  transform: rotate(0);
   width: 40px;
   height: 40px;
-  bottom: 41px;
-  right: 117px;
+  z-index: 1;
   border-radius: 50%;
   border: transparent;
   fill: $primary-color;
   background-color: $secondary-color;
 
-  transition: background-color 250ms linear, fill 250ms linear;
+  transition: background-color 250ms linear, fill 250ms linear, transform 250ms linear;
 
   &:hover,
   &:focus {
     fill: $secondary-color;
     background-color: $primary-color;
-  }
-
-  @media screen and (min-width: 768px) {
-    bottom: 40px;
-    right: 90px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    bottom: 50px;
-    right: 145px;
+    transform: rotate(-90deg);
   }
 }
 
 .products__btn_icon {
   width: 10px;
   height: 10px;
+}
+.position-coffe {
+  background: linear-gradient(#e8c086, $second-card-bgcolor);
+}
+.position-milk {
+  background: linear-gradient(#acd17b, $third-card-bgcolor);
 }
