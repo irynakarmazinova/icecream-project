@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/sprite/light-pink-logo-icecream.svg":[["light-pink-logo-icecream.bad0d827.svg","X8DV"],"X8DV"],"./../images/reviews/quotes.svg":[["quotes.7e90090a.svg","Fmas"],"Fmas"],"./../images/reviews/dots.svg":[["dots.8517bf52.svg","ma7s"],"ma7s"],"./../images/reviews/home.svg":[["home.f902e0eb.svg","r2u0"],"r2u0"],"/home/runner/work/icecream-project/icecream-project/src/images/desktop/contacts/contacts-background@1x.png":[["contacts-background@1x.6fd30241.png","e0BG"],"e0BG"],"/home/runner/work/icecream-project/icecream-project/src/images/desktop/contacts/contacts-background@2x.png":[["contacts-background@2x.1143ba83.png","fjTC"],"fjTC"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/icecream-project/src.a3fee9a6.js.map
+//# sourceMappingURL=/icecream-project/src.88b4f644.js.map
